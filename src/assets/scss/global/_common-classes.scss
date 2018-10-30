@@ -1,0 +1,28 @@
+.title-small {
+	span {
+		letter-spacing: 0.2em;
+		font-size: 11px;
+		text-transform: uppercase;
+	}
+}
+.title-medium {
+	span {
+		letter-spacing: 0.04em;
+		font-family: 'Libre Baskerville', serif;
+		font-style: italic;
+		color: #BC9B5D;
+		font-size: 30px;
+	}
+}
+.text {
+	font-family: 'Nunito', sans-serif;
+	font-weight: 200;
+	font-size: 15px;
+	span {
+		letter-spacing: 0.04em;
+		line-height: 1.4em;
+	}
+}
+.read-more-link {
+	font-size: 13px;
+}

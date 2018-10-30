@@ -1,0 +1,18 @@
+.home-content {
+	.img-container {
+		margin-bottom: 45px;
+
+		&.first {
+			margin-top: 125px;
+		}
+	}
+
+	.cell:nth-child(2) {
+		& > .text-content {
+			margin-top: 45px;
+		}
+	}
+}
+.text-content {
+
+}
