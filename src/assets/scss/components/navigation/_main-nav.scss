@@ -1,7 +1,29 @@
-$app-dashboard-top-nav-height: rem-calc(55);
-
-.app-dashboard-top-nav-bar  {
-  height: $app-dashboard-top-nav-height;
-  width: 100%;
-  flex: 0 0 $app-dashboard-top-nav-height;
+.nav.full {
+	border-top: 1px solid rgba(204, 204, 204, 0.43);
+}
+.title-bar {
+	background-color: rgba(20, 20, 20, 0.7);
+}
+.menu {
+	li {
+		@include breakpoint(medium) {
+			@include grid-column(1 of 6);
+		}
+		a {
+			text-decoration: none;
+			color: #605E5E;
+			text-transform: capitalize;
+			display: inline-block;
+			font-family: 'Nunito', sans-serif;
+			font-weight: 300;
+			font-size: 14px;
+			line-height: 36px;
+			text-align: center;
+			white-space: nowrap;
+			padding-bottom: 0;
+			&:hover {
+				color: #BC9B5D;
+			}
+		}
+	}
 }

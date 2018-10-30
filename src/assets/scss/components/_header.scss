@@ -1,0 +1,37 @@
+header {
+	padding-top: 25px;
+	.grid-container {
+		padding: 0 50px;
+	}
+}
+
+.social-links {
+	a {
+		color: #000;
+		display: inline-block;
+		width: 30px;
+	}
+}
+.addresses {
+	p {
+		font-size: 12px;
+		line-height: 1.4em;
+		color: #605E5E;
+		span {
+			letter-spacing: 0.04em;
+		}
+	}
+}
+.logo {
+	text-align: center;
+	font-family: 'Nunito', sans-serif;
+	text-transform: uppercase;
+	font-weight: 300;
+	line-height: 73px;
+	letter-spacing: 11px;
+	font-size: 55px;
+	color: #BC9B5D;
+	a {
+		color: inherit;
+	}
+}
