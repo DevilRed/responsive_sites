@@ -13,6 +13,56 @@
 		}
 	}
 }
-.text-content {
-
+.order-online {
+	position: relative;
+	img {
+		display: block;
+		@include breakpoint(medium) {
+			max-width: 930px;
+			margin-left: 35px;
+		}
+	}
+	.white-box {
+		position: absolute;
+		top: 48.5%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background-color: #fff;
+		width: 390px;
+		min-height: 139px;
+		text-align: center;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: center;
+		-ms-align-items: center;
+		align-items: center;
+	}
+}
+.white-box {
+	.content {
+		h6 {
+			font-family: 'Nunito', sans-serif;
+			font-size: 11px;
+			letter-spacing: 0.15em;
+			line-height: 1.4em;
+		}
+		a {
+			font-family: 'Libre Baskerville', serif;
+			span {
+				font-size: 27px;
+				line-height: 1.4em;
+				font-weight: 400;
+				font-family: inherit;
+				display: block;
+			}
+			&:hover {
+				span {
+					color: rgb(204, 204, 204);
+				}
+			}
+		}
+	}
 }
