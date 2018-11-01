@@ -4,12 +4,18 @@ header {
 		padding: 0 50px;
 	}
 }
+.header-top {
+	max-width: 980px;
+}
 
 .social-links {
 	a {
 		color: #000;
 		display: inline-block;
 		width: 30px;
+	}
+	@include breakpoint(small only) {
+		display: none;
 	}
 }
 .addresses {
