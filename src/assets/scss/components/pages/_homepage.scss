@@ -40,7 +40,7 @@
 		-ms-align-items: center;
 		align-items: center;
 	}
-}
+}//.order-online
 .white-box {
 	.content {
 		h6 {
@@ -63,6 +63,17 @@
 					color: rgb(204, 204, 204);
 				}
 			}
+		}
+	}
+}// .white-box
+
+.testimonial-text {
+	text-align: center;
+	margin-top: 55px;
+	margin-bottom: 55px;
+	.title-small {
+		span {
+			text-transform: none;
 		}
 	}
 }
