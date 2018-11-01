@@ -77,3 +77,24 @@
 		}
 	}
 }
+.reservations-home {
+	position: relative;
+	max-height: 478px;
+	overflow-y: hidden;
+	z-index: 1;
+	.title-medium {
+		text-align: center;
+		line-height: 45px;
+		margin: 1.556em 0;
+		span {
+			color: #fff;
+		}
+	}
+	form {
+		position: absolute;
+		z-index: 2;
+		top: 48.5%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
