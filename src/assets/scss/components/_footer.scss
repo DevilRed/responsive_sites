@@ -1,0 +1,39 @@
+#footer {
+	background-color: #BC9B5D;
+	padding-top: 42px;
+
+	.box {
+		p {
+			color: #fff;
+			font-size: 13px;
+			font-weight: 300;
+			line-height: 21px;
+			overflow-wrap: break-word;
+		}
+		input {
+			color: #fff;
+			font-size: 15px;
+			line-height: 21px;
+			justify-content: space-between;
+			outline: none;
+			border: 0;
+			&[type="email"] {
+				background-color: #C6AA75;
+				padding: 8px;
+			}
+			&[type="submit"] {
+				background-color: #fff;
+				color: #2F2E2E;
+				width: 100%;
+				padding: 9px;
+			}
+		}
+	}
+	.social-links {
+		a {
+			color: #fff;
+			outline: none;
+			font-size: 18px;
+		}
+	}
+}
