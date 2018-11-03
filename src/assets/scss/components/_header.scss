@@ -3,6 +3,7 @@ header {
 
 	@include breakpoint(small only) {
 		padding-top: 0;
+		height: 139px;
 	}
 	.grid-container {
 		padding: 0 50px;
