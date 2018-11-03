@@ -1,6 +1,10 @@
 .hero {
+	height: 650px;
+	background-repeat: no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
 	img {
-		display: block;
+		display: none;
 		width: 100%;
 	}
 }
