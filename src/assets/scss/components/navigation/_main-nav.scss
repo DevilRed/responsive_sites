@@ -14,6 +14,10 @@
 			box-shadow: 0 7px 0 #C9B691, 0 14px 0 #C9B691;
 		}
 	}
+
+	@include breakpoint(medium) {
+		display: none;
+	}
 }
 .menu {
 	li {
@@ -39,8 +43,25 @@
 	}
 }
 
-.main-nav {
+.main-nav, #main-menu {
 	@include breakpoint(small only) {
 		display: none;
+	}
+}
+#nav-modal {
+	.close-button {
+		span {
+			color: #BC9B5D;
+			font-size: 25px;
+		}
+	}
+	.menu {
+		text-align: center;
+		margin-top: 70px;
+		li {
+			a {
+				font-size: 15px;
+			}
+		}
 	}
 }
