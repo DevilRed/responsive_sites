@@ -79,9 +79,13 @@
 }
 .reservations-home {
 	position: relative;
-	max-height: 478px;
-	overflow-y: hidden;
+	min-height: 476px;
 	z-index: 1;
+	img {
+		height: 476px;
+		width: auto;
+		display: block;
+	}
 	.title-medium {
 		text-align: center;
 		line-height: 45px;
@@ -96,5 +100,33 @@
 		top: 48.5%;
 		left: 50%;
 		transform: translate(-50%, -50%);
+		max-width: 750px;
+
+		input {
+			display: block;
+			width: 167px;
+			height: 42px;
+			cursor: pointer;
+			&[type="submit"] {
+				background-color: rgb(188, 155, 93);
+				border: 0;
+
+				&:hover {
+					background-color: rgb(160, 132, 79);
+				}
+			}
+		}
+		select {
+			cursor: pointer;
+			width: 167px;
+			height: 42px;
+		}
+	}
+	@include breakpoint(medium) {
+		max-height: 478px;
+		overflow-y: hidden;
+		.input-wrapper {
+			padding-right: 18px;
+		}
 	}
 }

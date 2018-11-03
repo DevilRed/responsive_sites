@@ -2,9 +2,9 @@
 	<img src={{img_src}}>
 	{{#if has_reservations_form}}
 	<form class="large-12 large-centered">
-		<div class="row">
+		<div class="row collapse">
 	<h2 class="form-title column large-centered large-12 title-medium"><span>Reservations</span></h2>
-			<div class="small-12 medium-3 columns">
+			<div class="input-wrapper">
 				<!-- <input type="text" id="date"> -->
 				<select name="data">
 					<option value="husker">Husker</option>
@@ -13,7 +13,7 @@
 					<option value="apollo">Apollo</option>
 				</select>
 			</div>
-			<div class="small-12 medium-3 columns">
+			<div class="input-wrapper">
 				<!-- <input type="text" id="time"> -->
 				<select name="data">
 					<option value="husker">Husker</option>
@@ -22,7 +22,7 @@
 					<option value="apollo">Apollo</option>
 				</select>
 			</div>
-			<div class="small-12 medium-3 columns">
+			<div class="input-wrapper">
 				<!-- <input type="text" id="party-size"> -->
 				<select name="data">
 					<option value="husker">Husker</option>
@@ -31,7 +31,7 @@
 					<option value="apollo">Apollo</option>
 				</select>
 			</div>
-			<div class="small-12 medium-3 columns">
+			<div class="input-wrapper">
 				<input type="submit" value="Book Now" id="submit">
 			</div>
 		</div>
