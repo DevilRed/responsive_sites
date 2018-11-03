@@ -2,7 +2,18 @@
 	border-top: 1px solid rgba(204, 204, 204, 0.43);
 }
 .title-bar {
-	background-color: rgba(20, 20, 20, 0.7);
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	width: 40px;
+	height: 50px;
+	.menu-icon {
+		border-color: #C9B691;
+		&::after {
+			background-color: #C9B691;
+			box-shadow: 0 7px 0 #C9B691, 0 14px 0 #C9B691;
+		}
+	}
 }
 .menu {
 	li {
@@ -25,5 +36,11 @@
 				color: #BC9B5D;
 			}
 		}
+	}
+}
+
+.main-nav {
+	@include breakpoint(small only) {
+		display: none;
 	}
 }

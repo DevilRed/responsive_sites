@@ -1,11 +1,39 @@
 header {
 	padding-top: 25px;
+
+	@include breakpoint(small only) {
+		padding-top: 0;
+	}
 	.grid-container {
 		padding: 0 50px;
 	}
 }
 .header-top {
 	max-width: 980px;
+	position: relative;
+	.nav-container {
+		margin-top: 11px;
+		margin-right: 5px;
+	}
+	.bottom-line-small {
+		height: 1px;
+		border-bottom: 1px solid rgba(204, 204, 204, 0.43);
+		position: absolute;
+		top: 70px;
+		left: 0;
+		width: 100%;
+	}
+	@include breakpoint(medium) {
+		.nav-container {
+			display: none;
+		}
+	}
+	@include breakpoint(small only) {
+		.addresses {
+			margin-top: 19px;
+			margin-left: 15px;
+		}
+	}
 }
 
 .social-links {
@@ -14,9 +42,9 @@ header {
 		display: inline-block;
 		width: 30px;
 	}
-	/* @include breakpoint(small only) {
+	@include breakpoint(small only) {
 		display: none;
-	} */
+	}
 }
 .addresses {
 	p {
