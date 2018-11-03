@@ -1,5 +1,6 @@
 import $ from 'jquery';
 import whatInput from 'what-input';
+import flatpickr from "flatpickr";
 
 window.$ = $;
 
@@ -128,3 +129,9 @@ var initParalaxBg = function(x) {
   });
 }
 initParalaxBg();
+// datepicker
+// $(".reservations-home #date").flatpickr();
+flatpickr(".reservations-home #date", {
+  enableTime: true,
+  dateFormat: "Y-m-d H:i",
+});
