@@ -27,6 +27,17 @@
 	}
 	.large-centered {
 		padding: 0;
+		@include breakpoint(small only) {
+			padding: 0 15px;
+			.input-wrapper {
+				width: 100%;
+				display: block;
+				input, select {
+					display: block;
+					width: 100%;
+				}
+			}
+		}
 	}
 }
 

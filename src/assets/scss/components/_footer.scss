@@ -2,6 +2,15 @@
 	background-color: #BC9B5D;
 	padding-top: 42px;
 
+	@include breakpoint(small only) {
+		.box {
+			padding: 0 28px;
+			p {
+				font-size: 14px;
+			}
+		}
+	}
+
 	.box {
 		p {
 			color: #fff;
@@ -9,6 +18,9 @@
 			font-weight: 300;
 			line-height: 21px;
 			overflow-wrap: break-word;
+			span {
+				color: inherit;
+			}
 		}
 		input {
 			color: #fff;
@@ -34,6 +46,15 @@
 			color: #fff;
 			outline: none;
 			font-size: 18px;
+		}
+		@include breakpoint(small only) {
+			display: block;
+			text-align: center;
+			a{
+				font-size: 22px;
+				display: inline-block;
+				margin: 0 6px;
+			}
 		}
 	}
 }
