@@ -8,6 +8,9 @@
 				margin-top: 0;
 			}
 		}
+		&.mobile {
+			margin-top: 25px;
+		}
 	}
 
 	.cell:nth-child(2) {
@@ -51,6 +54,10 @@
 			font-size: 11px;
 			letter-spacing: 0.15em;
 			line-height: 1.4em;
+
+			@include breakpoint(small only) {
+				font-size: 10px;
+			}
 		}
 		a {
 			font-family: 'Libre Baskerville', serif;
@@ -60,6 +67,10 @@
 				font-weight: 400;
 				font-family: inherit;
 				display: block;
+
+				@include breakpoint(small only) {
+					font-size: 22px;
+				}
 			}
 			&:hover {
 				span {
@@ -77,6 +88,13 @@
 	.title-small {
 		span {
 			text-transform: none;
+		}
+	}
+	@include breakpoint(small only) {
+		.title-medium {
+			span {
+				font-size: 27px;
+			}
 		}
 	}
 }
@@ -131,5 +149,13 @@
 		.input-wrapper {
 			padding-right: 18px;
 		}
+	}
+}
+.mobile-content {
+	.order-online {
+		margin-top: 25px;
+	}
+	.testimonial-text {
+		margin-bottom: 0;
 	}
 }
