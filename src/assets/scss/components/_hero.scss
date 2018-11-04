@@ -1,10 +1,11 @@
 .hero {
 	height: 650px;
 	background-repeat: no-repeat;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+	background-position: 0 0;
 	img {
 		display: none;
 		width: 100%;
@@ -26,4 +27,5 @@
 
 .reservations-home {
 	background-size: cover;
+	opacity: 0.8;
 }
