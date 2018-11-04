@@ -132,6 +132,12 @@ initParalaxBg();
 // datepicker
 // $(".reservations-home #date").flatpickr();
 flatpickr(".reservations-home #date", {
+  // minDate: 'today',
+  // enableTime: true,
+  dateFormat: "Y-m-d",
+});
+flatpickr(".reservations-home #time", {
   enableTime: true,
-  dateFormat: "Y-m-d H:i",
+  dateFormat: "H:i",
+  noCalendar: true
 });
