@@ -4,6 +4,9 @@
 
 		&.first {
 			margin-top: 125px;
+			@include breakpoint(small only) {
+				margin-top: 0;
+			}
 		}
 	}
 

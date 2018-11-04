@@ -3,7 +3,7 @@ header {
 
 	@include breakpoint(small only) {
 		padding-top: 0;
-		height: 139px;
+		height: 128px;
 	}
 	.grid-container {
 		padding: 0 50px;
@@ -68,5 +68,10 @@ header {
 	color: #BC9B5D;
 	a {
 		color: inherit;
+	}
+	@include breakpoint(small only) {
+		font-size: 35px;
+		margin-bottom: 0;
+		height: 58px;
 	}
 }

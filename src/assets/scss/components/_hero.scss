@@ -12,10 +12,12 @@
 	}
 
 	@include breakpoint(small only) {
-		-webkit-background-size: contain;
+		/* -webkit-background-size: contain;
 		-moz-background-size: contain;
 		-o-background-size: contain;
-		background-size: contain;
+		background-size: contain; */
+		background-size: 150%;
+		background-position: 45% 0;
 		background-attachment: initial !important;
 		height: 300px;
 
