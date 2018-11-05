@@ -1,0 +1,48 @@
+.menu-page {
+	a, p {
+		font-weight: 300;
+		font-size: 14px;
+	}
+	.hero {
+		background-size: 100%;
+		max-height: 320px;
+	}
+	.title-medium {
+		text-transform: uppercase;
+		padding-bottom: 15px;
+		border-bottom: 2px solid rgb(160, 160, 159);;
+		span {
+			font-style: normal;
+			font-size: 25px;
+		}
+	}
+}
+.menu-type {
+	.item {
+		position: relative;
+		min-height: 175px;
+		padding-top: 30px;
+		&::after {
+			content: ".....................................";
+			font-size: 21px;
+			letter-spacing: 2px;
+			color: rgb(160, 160, 159);
+			font-weight: 300;
+			/* position: absolute;
+			left: 0;
+			right: 0; */
+		}
+		&:last-child {
+			float: left;
+		}
+		.item-title {
+			font-size: 15px;
+		}
+		p {
+			font-size: 14px;
+		}
+		.item-price {
+			font-size: 15px;
+		}
+	}
+}
