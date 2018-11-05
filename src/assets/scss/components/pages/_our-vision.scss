@@ -1,0 +1,60 @@
+.our-vision {
+
+	.hero {
+		max-height: 320px;
+		-moz-background-size: cover;
+		-webkit-background-size: cover;
+		-o-background-size: cover;
+		-ms-background-size: cover;
+	}
+
+	.text-content {
+		padding: 60px 0;
+		p {
+			font-size: 14px;
+			font-weight: 300;
+			line-height: 20px;
+			max-width: 363px;
+		}
+	}
+}
+.press-post {
+	position: relative;
+	.post-number {
+		position: relative;
+		display: inline-block;
+		font-size: 50px;
+		color: #BC9B5D;
+		padding-right: 20px;
+		@extend .libre-font;
+		font-weight: 400;
+		&::after {
+			content: "";
+			display: block;
+			border: 1px solid rgb(204, 204, 204);
+			position: absolute;
+			top: 22%;
+			bottom: 22%;
+			right: 0;
+		}
+	}
+	.title-small {
+		display: inline-block;
+		position: relative;
+		bottom: 25px;
+		padding-left: 35px;
+		span {
+			text-transform: none;
+			font-family: 'Nunito', sans-serif;
+		}
+	}
+	p {
+		font-size: 25px;
+		padding-left: 90px;
+		padding-top: 10px;
+		position: relative;
+		bottom: 50px;
+		font-family: 'Libre Baskerville', serif;
+		font-style: italic;
+	}
+}
