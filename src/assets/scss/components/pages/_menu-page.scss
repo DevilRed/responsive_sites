@@ -42,12 +42,42 @@
 		}
 		.item-title {
 			font-size: 15px;
+			span {
+				display: inline-block;
+				margin-right: 8px;
+			}
 		}
 		p {
 			font-size: 14px;
+			&.weight {
+				position: relative;
+				height: 20px;
+				&::after {
+					content: ".............................................";
+					display: inline-block;
+					font-size: 18px;
+					letter-spacing: 2px;
+					position: absolute;
+					left: 0;
+					right: 0;
+				}
+				span {
+					border-bottom: 0;
+					position: relative;
+					z-index: 2;
+					background-color: #fff;
+					font-size: 14px;
+				}
+			}
 		}
 		.item-price {
 			font-size: 15px;
+			margin-bottom: 60px;
+		}
+		&.has-weight {
+			.item-price {
+				margin-bottom: 30px;
+			}
 		}
 	}
 }
