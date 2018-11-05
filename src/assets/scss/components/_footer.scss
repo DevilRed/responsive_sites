@@ -57,4 +57,18 @@
 			}
 		}
 	}
+	.subscribe {
+		input {
+			&::-moz-placeholder {
+				color: #fff;
+			}
+			&::-webkit-input-placeholder {
+				color: #fff;
+			}
+			&[type="submit"] {
+				color: #2F2E2E;
+				font-weight: 300;
+			}
+		}
+	}
 }
