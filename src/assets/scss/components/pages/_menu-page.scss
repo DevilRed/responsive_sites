@@ -3,9 +3,19 @@
 		font-weight: 300;
 		font-size: 14px;
 	}
+	.logo {
+		a {
+			font-size: 35px;
+		}
+	}
 	.hero {
 		background-size: 100%;
 		max-height: 320px;
+		@include breakpoint(small only) {
+			min-height: 320px;
+			background-size: cover;
+			margin-top: 30px;
+		}
 	}
 	.title-medium {
 		text-transform: uppercase;
@@ -18,6 +28,14 @@
 	}
 	#footer {
 		margin-top: 50px;
+	}
+	@include breakpoint(small only) {
+		.served-menu-message {
+			a {
+				font-size: 20px;
+				color: #605E5E;
+			}
+		}
 	}
 }
 .menu-type {
@@ -60,6 +78,7 @@
 					position: absolute;
 					left: 0;
 					right: 0;
+					bottom: 0;
 				}
 				span {
 					border-bottom: 0;
@@ -77,6 +96,9 @@
 		&.has-weight {
 			.item-price {
 				margin-bottom: 30px;
+			}
+			@include breakpoint(small only) {
+				padding-bottom: 40px;
 			}
 		}
 	}
