@@ -16,8 +16,12 @@
 			font-size: 25px;
 		}
 	}
+	#footer {
+		margin-top: 50px;
+	}
 }
 .menu-type {
+	margin: 20px 0;
 	.item {
 		position: relative;
 		min-height: 175px;
@@ -28,9 +32,10 @@
 			letter-spacing: 2px;
 			color: rgb(160, 160, 159);
 			font-weight: 300;
-			/* position: absolute;
+			position: absolute;
 			left: 0;
-			right: 0; */
+			right: 0;
+			bottom: 0;
 		}
 		&:last-child {
 			float: left;
