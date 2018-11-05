@@ -150,3 +150,14 @@ $('.served-menu-message a').on('click', function (){
   }
   return false;
 });
+// order online toggle content
+$('.order-online .options-pane button').on('click', function (){
+  $(".to-toggle").hide();
+  $(this).addClass('active').siblings().removeClass('active');
+  if($(this).attr('id') == "starters-toggler-trigger") {
+    $("#starters-panel").show();
+    return false;
+  } else if($(this).attr('id') == "main-toggler-trigger") {
+    $("#main-panel").show();
+  }
+});
