@@ -34,7 +34,30 @@
 			a {
 				font-size: 20px;
 				color: #605E5E;
+				margin-top: 0;
 			}
+		}
+	}
+	.served-menu-message {
+		a {
+			color: #605E5E;
+			margin-top: 60px;
+			display: inline-block;
+		}
+	}
+	.img-container {
+		display: none;
+		min-height: 287px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		&[id="dropdown1"] {
+			background-image: url('../img/img-dropdown1.jpg');
+		}
+		&[id="dropdown2"] {
+			background-image: url('../img/img-dropdown2.jpg');
+		}
+		@include breakpoint(small only) {
+			display: none !important;
 		}
 	}
 }

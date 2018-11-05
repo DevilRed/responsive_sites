@@ -141,3 +141,12 @@ flatpickr(".reservations-home #time", {
   dateFormat: "H:i",
   noCalendar: true
 });
+$('.served-menu-message a').on('click', function (){
+  var displayValue = $('.menu-page .img-container').css('display');
+  if(displayValue == "none") {
+    $('.menu-page .img-container').css('display', 'block');
+  } else {
+    $('.menu-page .img-container').css('display', 'none');
+  }
+  return false;
+});
