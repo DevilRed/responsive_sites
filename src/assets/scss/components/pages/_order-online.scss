@@ -126,10 +126,33 @@
 				font-size: 0.75em;
 			}
 		}
-		.button {
+		.button, .orange-button {
 			margin: 0 15px;
 			display: block;
 			width: 100%;
+			text-transform: uppercase;
+			background-color: #BC9B5D;
+			@extend .futura-font;
+		}
+	}
+
+	.show-for-small-only {
+		h2 {
+			font-size: 25px;
+			@extend .libre-font;
+			font-style: normal;
+			text-align: center;
+		}
+		p {
+			font-size: 14px;
+			text-align: center;
+			&.small-centered.title {
+				margin-bottom: 80px;
+			}
+		}
+		button {
+			margin: 0 auto;
+			display: block;
 			text-transform: uppercase;
 			background-color: #BC9B5D;
 			@extend .futura-font;
