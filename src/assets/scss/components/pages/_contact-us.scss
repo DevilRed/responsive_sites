@@ -32,6 +32,7 @@
 		}
 	}
 	.map-wrapper {
+		margin-bottom: 70px;
 		.form-title {
 			@include breakpoint(small only) {
 				span {
@@ -57,12 +58,18 @@
 				input:not([type="submit"]) {
 					margin-bottom: 5px;
 					border: 1px solid rgb(160, 160, 159);
+					@include breakpoint(small only) {
+						height: 38px;
+					}
 				}
 				textarea {
 					min-height: 97px;
 					resize: none;
 					border: 1px solid rgb(160, 160, 159);
 					margin-bottom: 10px;
+					@include breakpoint(small only) {
+						height: 120px;
+					}
 				}
 				.orange-button {
 					float: right;
@@ -82,10 +89,24 @@
 			}
 			@include breakpoint(small only) {
 				margin-bottom: 50px;
+				margin-top: 40px;
+				> p {
+					padding-left: 5px;
+				}
 			}
+		}
+		@include breakpoint(small only) {
+			padding: 0 5px;
+			margin-bottom: 10px;
 		}
 	}// .map-wrapper
 	.map-medium {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		padding: 20px 0;
 		@include breakpoint(small only) {
 			display: none;
 		}
