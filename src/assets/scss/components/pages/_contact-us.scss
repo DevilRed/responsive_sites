@@ -4,6 +4,7 @@
 	}
 	.reservations-home {
 		margin-top: 45px;
+		margin-bottom: 70px;
 		min-height: 120px;
 		.form-title {
 			margin-bottom: 15px;
@@ -20,6 +21,73 @@
 		input[type="text"], select {
 			border: 1px solid rgb(160, 160, 159);
 			height: 40px;
+		}
+		input, select {
+			@include breakpoint(small only) {
+				width: 100%;
+			}
+		}
+		@include breakpoint(small only) {
+			margin-bottom: 115px;
+		}
+	}
+	.map-wrapper {
+		.form-title {
+			@include breakpoint(small only) {
+				span {
+					font-size: 27px;
+				}
+			}
+		}
+		p {
+			line-height: 21px;
+			letter-spacing: 0.04em;
+			font-size: 14px;
+		}
+		br {
+			border: 2px solid red;
+		}
+		input[type="text"], input[type="email"] {
+			height: 30px;
+		}
+		.form-wrapper {
+			margin-top: 85px;
+			form {
+				display: inline-block;
+				input:not([type="submit"]) {
+					margin-bottom: 5px;
+					border: 1px solid rgb(160, 160, 159);
+				}
+				textarea {
+					min-height: 97px;
+					resize: none;
+					border: 1px solid rgb(160, 160, 159);
+					margin-bottom: 10px;
+				}
+				.orange-button {
+					float: right;
+					margin: 0;
+					text-transform: none;
+					padding: 8px 45px;
+					font-weight: 300;
+					font-size: 13px;
+					color: #fff;
+					border: 0;
+					outline: none;
+					@include breakpoint(small only) {
+						float: left;
+						padding: 13px 40px;
+					}
+				}
+			}
+			@include breakpoint(small only) {
+				margin-bottom: 50px;
+			}
+		}
+	}// .map-wrapper
+	.map-medium {
+		@include breakpoint(small only) {
+			display: none;
 		}
 	}
 }

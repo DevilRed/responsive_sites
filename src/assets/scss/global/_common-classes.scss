@@ -38,3 +38,16 @@
 .hide-panel {
 	display: none;
 }
+.orange-button {
+	margin: 0 15px;
+	display: block;
+	width: 100%;
+	text-transform: uppercase;
+	background-color: #BC9B5D;
+	@extend .futura-font;
+	width: auto;
+
+	&:hover {
+		background-color: #a0844f;
+	}
+}
