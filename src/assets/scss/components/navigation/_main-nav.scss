@@ -43,6 +43,15 @@
 	}
 }
 
+#main-menu {
+	ul {
+		display: flex;
+		li {
+			flex: 1;
+		}
+	}
+}
+
 .main-nav, #main-menu {
 	@include breakpoint(small only) {
 		display: none;
@@ -63,5 +72,10 @@
 				font-size: 15px;
 			}
 		}
+	}
+}
+.nav {
+	li.active a {
+		background-color: transparent;
 	}
 }
