@@ -101,11 +101,11 @@
 		}
 	}// .map-wrapper
 	.map-medium {
-		display: -webkit-flex;
+		/* display: -webkit-flex;
 		display: -moz-flex;
 		display: -ms-flex;
 		display: -o-flex;
-		display: flex;
+		display: flex; */
 		padding: 20px 0;
 		@include breakpoint(small only) {
 			display: none;

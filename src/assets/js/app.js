@@ -161,3 +161,21 @@ $('.order-online .options-pane button').on('click', function (){
     $("#main-panel").show();
   }
 });
+
+function toggleOrderMenu(){
+  $('.order-online .toggle-menu p').on('click', function (){
+    // $(this).addClass('expanded');
+    // $(this).siblings('.options-pane').slideUp('slow');
+    if($(this).hasClass('expanded')) {
+      $(this).siblings('.options-pane').slideDown('slow');
+      $(this).removeClass('expanded');
+    } else {
+      $(this).addClass('expanded');
+      $(this).siblings('.options-pane').slideUp('slow');
+    }
+  });
+};
+
+$(document).ready(function (){
+  toggleOrderMenu();
+});
