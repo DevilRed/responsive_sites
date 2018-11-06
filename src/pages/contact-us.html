@@ -1,0 +1,34 @@
+---
+meta-title: Vegetarian Restaurant Website Template
+layout: vegetarian-layout
+---
+{{> hero-parallax img_src="assets/img/brown-bread.jpg" }}
+<div class="grid-container fluid full">
+	<div class="contact-us-content">
+		<div class="row reservations-home">
+			<form action="" class="small-12 columns">
+				<h2 class="form-title columns small-12 large-12 title-medium"><span>Reservations</span></h2>
+				<div class="large-3 columns">
+					<input type="text" id="date" placeholder="Date">
+				</div>
+				<div class="large-3 columns">
+					<input type="text" id="time" placeholder="Time">
+				</div>
+				<div class="large-3 columns">
+					<select name="party-size" id="party-size">
+						<option value="" disabled selected>Party Size</option>
+						<option value="1">1 person</option>
+						<option value="2">2 people</option>
+						<option value="3">3 people</option>
+						<option value="4">4 people</option>
+						<option value="5">5 people</option>
+						<option value="6">6 people</option>
+					</select>
+				</div>
+				<div class="large-3 columns">
+					<input type="submit" value="Book Now" id="submit">
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

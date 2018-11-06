@@ -1,0 +1,25 @@
+.contact-us {
+	.hero {
+		max-height: 320px;
+	}
+	.reservations-home {
+		margin-top: 45px;
+		min-height: 120px;
+		.form-title {
+			margin-bottom: 15px;
+			margin-top: 0;
+			text-align: left;
+			span {
+				color: #BC9B5D;
+			}
+		}
+		input[type="text"] {
+			background-color: #fff;
+			outline: none;
+		}
+		input[type="text"], select {
+			border: 1px solid rgb(160, 160, 159);
+			height: 40px;
+		}
+	}
+}
