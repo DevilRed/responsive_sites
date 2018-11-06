@@ -1,6 +1,7 @@
 #footer {
 	background-color: #BC9B5D;
 	padding-top: 42px;
+	padding-bottom: 45px;
 
 	@include breakpoint(small only) {
 		.box {
