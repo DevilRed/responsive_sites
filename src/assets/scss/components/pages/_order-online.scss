@@ -1,3 +1,6 @@
+.order-online-content {
+	margin-bottom: 25px;
+}
 .order-online {
 	.hero {
 		max-height: 320px;
@@ -5,6 +8,7 @@
 	}
 
 	.medium-2 {
+		border-right: 1px solid  #605E5E;
 		.toggle-menu {
 			p {
 				font-weight: 300;
@@ -24,6 +28,139 @@
 					}
 				}
 			}
+		}
+	}
+	.medium-7 {
+		.menu-title {
+			text-align: center;
+			h2 {
+				font-size: 25px;
+				@extend .libre-font;
+				font-style: normal;
+			}
+			p {
+				font-size: 13px;
+				span {
+					padding: 0 50px;
+					padding-bottom: 15px;
+					border-bottom: 1px solid  #ccc;
+				}
+			}
+		}
+		.to-toggle {
+			h3 {
+				text-align: center;
+				font-size: 28px;
+				text-transform: uppercase;
+				padding-top: 20px;
+				@extend .libre-font;
+			}
+			p {
+				font-size: 13px;
+				text-align: center;
+				font-weight: 300;
+				margin-bottom: 70px;
+			}
+		}
+	}
+	.medium-3 {
+		border-left: 1px solid  #605E5E;
+		.title {
+			border-bottom: 1px solid  #605E5E;
+			margin-bottom: 30px;
+			p{
+				padding: 0 15px;
+			}
+			p, span {
+				font-size: 14px;
+			}
+		}
+		.cart-box {
+			// min-height: 235px;
+			text-align: center;
+			.empty-cart {
+				margin: 0 auto;
+			}
+			.cart-notice {
+				font-size: 12px;
+				max-width: 160px;
+				margin: 0 auto;
+				margin-top: 20px;
+				margin-bottom: 35px;
+				color: rgba(96, 94, 94, 0.5);
+			}
+			.cart-summary {
+				border-top: 2px solid #BC9B5D;
+				padding-top: 20px;
+				padding-bottom: 0;
+				margin: 0 15px;
+				span {
+					color: #BC9B5D;
+					font-size: 14px;
+				}
+			}
+		}
+		.cart-messages {
+			padding-left: 15px;
+			border-top: 1px solid  #605E5E;
+			.special {
+				span {
+					padding: 20px 7px 15px 7px;
+					border-bottom: 1px solid  #605E5E;
+					display: block;
+					margin: 0 8px;
+					&.plus {
+						display: inline;
+						font-weight: 600;
+						font-size: 15px;
+						border-bottom: 0;
+						padding-right: 5px;
+					}
+				}
+			}
+			.pickup-text {
+				font-style: italic;
+				font-size: 14px;
+			}
+			.asap-text {
+				font-size: 0.75em;
+			}
+		}
+		.button {
+			margin: 0 15px;
+			display: block;
+			width: 100%;
+			text-transform: uppercase;
+			background-color: #BC9B5D;
+			@extend .futura-font;
+		}
+	}
+}
+
+
+.food-box {
+	position: relative;
+	border-bottom: 1px solid  #605E5E;
+	padding-top: 21px;
+
+	&:last-child {
+		border-bottom: 0;
+	}
+	.small-9 {
+		position: relative;
+		h4 {
+			font-size: 16px;
+		}
+		p {
+			font-size: 14px;
+			text-align: left !important;
+			margin-bottom: 50px !important;
+		}
+		.price {
+			position: absolute;
+			right: 0;
+			top: 0;
+			color: #BC9B5D;
 		}
 	}
 }
