@@ -16,12 +16,12 @@
 
   <div class="reveal" id="nav-modal" data-reveal>
     <ul class="menu vertical">
-      <li{{#ifpage 'homepage'}} class="active"{{/ifpage}}><a href="#">home</a></li>
-      <li><a href="#">our vision</a></li>
-      <li><a href="#">menu</a></li>
-      <li><a href="#">order online</a></li>
+      <li {{#ifpage 'homepage'}} class="active"{{/ifpage}}><a href="homepage.html">home</a></li>
+      <li {{#ifpage 'our-vision'}} class="active"{{/ifpage}}><a href="our-vision.html">our vision</a></li>
+      <li {{#ifpage 'menu-page'}} class="active"{{/ifpage}}><a href="menu-page.html">menu</a></li>
+      <li {{#ifpage 'order-online'}} class="active"{{/ifpage}}><a href="order-online.html">order online</a></li>
       <!-- <li><a href="#">blog</a></li> -->
-      <li><a href="#">contact us</a></li>
+      <li {{#ifpage 'contact-us'}} class="active"{{/ifpage}}><a href="contact-us.html">contact us</a></li>
     </ul>
     <button class="close-button" data-close aria-label="Close modal" type="button">
       <span aria-hidden="true">&times;</span>

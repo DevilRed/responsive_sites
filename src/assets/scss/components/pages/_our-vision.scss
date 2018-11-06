@@ -47,6 +47,9 @@
 			bottom: 22%;
 			right: 0;
 		}
+		@include breakpoint(small only) {
+			font-size: 34px;
+		}
 	}
 	.title-small {
 		display: inline-block;
@@ -56,6 +59,11 @@
 		span {
 			text-transform: none;
 			font-family: 'Nunito', sans-serif;
+		}
+		@include breakpoint(small only) {
+			width: 70%;
+			top: 0;
+			bottom: auto;
 		}
 	}
 	p {
@@ -71,6 +79,13 @@
 			bottom: 0;
 			font-size: 21px;
 			padding: 0 35px;
+		}
+	}
+}
+.our-vision-content {
+	.row.about {
+		@include breakpoint(small only) {
+			padding: 0 15px;
 		}
 	}
 }
