@@ -163,6 +163,7 @@
 	}
 
 	.show-for-small-only {
+		margin-bottom: 70px;
 		h2 {
 			font-size: 25px;
 			@extend .libre-font;
@@ -170,10 +171,11 @@
 			text-align: center;
 		}
 		p {
-			font-size: 14px;
+			font-size: 0.781em;
 			text-align: center;
+			font-weight: 300;
 			&.small-centered.title {
-				margin-bottom: 80px;
+				margin-bottom: 25px;
 			}
 		}
 		button {
