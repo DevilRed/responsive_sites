@@ -4,16 +4,23 @@
 	.row.hero { position: relative; }
 
 	.boxes-row {
-		position: absolute;
-		width: 100%;
+		margin-top: 100px;
 		@include grid-row();
+		margin-left: 15px;
+		margin-right: 3px;
 		@include breakpoint(medium) {
+			position: absolute;
+			width: 100%;
 			left: 0;
 			bottom: -55px;
 		}
 
 	}
 	p {
-			font-weight: 300;
-		}
-}
+		font-weight: 300;
+	}
+	@include breakpoint(small only) {
+		background-attachment: initial !important;
+		max-height: 492px;
+	}
+}// .hero

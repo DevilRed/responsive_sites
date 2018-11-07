@@ -1,0 +1,11 @@
+.homepage {
+	.text-content {
+		padding: 0 18px;
+		h2 {
+			margin-top: 120px;
+			@include breakpoint(medium) {
+				margin-top: 110px;
+			}
+		}
+	}
+}

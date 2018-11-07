@@ -38,3 +38,19 @@
 		margin-top: 15px;
 	}
 }
+
+.text-content {
+	h2{
+		text-transform: uppercase;
+		font-weight: 700;
+		letter-spacing: 0.05em;
+		line-height: 1.1em;
+		font-size: 32px;
+		color: rgb(85, 74, 88);
+		margin-bottom: 35px;
+	}
+	p {
+		font-size: 15px;
+		color: $paragraph-color;
+	}
+}
