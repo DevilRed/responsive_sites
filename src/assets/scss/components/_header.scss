@@ -1,5 +1,8 @@
 #header {
 	background-color: $primary-color;
+	@include breakpoint(small only) {
+		height: 105px;
+	}
 }
 #logo {
 	padding: 10px 0;
@@ -72,3 +75,14 @@
 		padding: 8px 0 0 15px;
 	}
 }
+.mobile-menu-icon {
+	border: 1px solid #fff;
+	border-radius: 4px;
+	background-color: #40BABC;
+	padding: 12px 14px;
+	position: absolute;
+	top: 17px;
+	right: 2px;
+}
+
+@import 'components/navigation/main-nav';

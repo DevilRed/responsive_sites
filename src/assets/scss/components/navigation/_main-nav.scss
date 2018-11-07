@@ -1,7 +1,62 @@
-$app-dashboard-top-nav-height: rem-calc(55);
+.nav-container {
+	position: relative;
+	@include breakpoint(medium) {
+		height: 104px;
+	}
+}
+#main-menu {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+	.menu {
+		li {
+			a {
+				text-transform: uppercase;
+				color: #fff;
+				font-size: 15px;
+				display: block;
+				&:hover {
+					color: $link-hover-color;
+				}
+			}
+			&.active {
+				a {
+					color: $link-hover-color;
+				}
+			}
+		}
 
-.app-dashboard-top-nav-bar  {
-  height: $app-dashboard-top-nav-height;
-  width: 100%;
-  flex: 0 0 $app-dashboard-top-nav-height;
+	}// .menu
+}
+a.active {
+	color: $link-hover-color;
+}
+.menu.vertical {
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 20vh;
+	text-align: center;
+	li {
+		a {
+			background-color: transparent;
+			color: #fff;
+			text-transform: uppercase;
+			display: block;
+			border-bottom: 1px solid #fff;
+		}
+		&.active {
+			a {
+				color: #827984;
+			}
+		}
+		&:last-child {
+			a {
+				border-bottom: 0;
+			}
+		}
+	}// li
+}
+.reveal {
+	background-color: $secondaryCustomColor;
 }
