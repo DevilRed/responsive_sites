@@ -1,5 +1,6 @@
 .hero {
 	height: 645px;
+	background-repeat: no-repeat;
 	.row.hero { position: relative; }
 
 	.boxes-row {
@@ -9,7 +10,6 @@
 		@include breakpoint(medium) {
 			left: 0;
 			bottom: -55px;
-			border: 2px solid red;
 		}
 
 	}

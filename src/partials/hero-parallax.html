@@ -1,14 +1,16 @@
 <div class="grid-container fluid full hero {{custom_class}} paralaxbg" style="background-image: url({{img_src}});">
 	<div class="row hero">
 		<div class="boxes-row">
-			{{#each boxes-content-home.boxes-content}}
-				<div class="float-box {{ this.box-type }}">
-					<h4>{{this.title}}</h4>
-					{{#each this.text}}
-					<p>{{ this }}</p>
+			{{#ifpage 'homepage'}}
+				{{#each boxes-content-home.boxes-content}}
+					<div class="float-box {{ this.box-type }}">
+						<h4>{{this.title}}</h4>
+						{{#each this.text}}
+						<p>{{ this }}</p>
+					{{/each}}
+					</div>
 				{{/each}}
-				</div>
-			{{/each}}
+			{{/ifpage}}
 		</div>
 	</div>
 </div>
