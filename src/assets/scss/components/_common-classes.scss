@@ -1,0 +1,34 @@
+.float-box {
+	padding: 15px 30px !important;
+	@include grid-column(12);
+	@include breakpoint(medium) {
+		@include grid-column(4);
+		min-height: 246px;
+		max-height: 246px;
+		&:last-child {
+			float: left !important;
+		}
+	}
+	&.secondary {
+		background-color: $secondaryCustomColor;
+	}
+	&.primary {
+		background-color: $primary-color;
+	}
+	h4 {
+		text-transform: uppercase;
+		color: #fff;
+		line-height: 40px;
+		font-size: 40px;
+		font-weight: 600;
+	}
+	p {
+		color: #fff;
+		line-height: 1.6em;
+		margin: 0;
+		font-size: 16px;
+		&:last-child {
+			margin-bottom: 70px;
+		}
+	}
+}

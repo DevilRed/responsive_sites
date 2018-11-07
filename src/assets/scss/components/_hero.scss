@@ -1,0 +1,16 @@
+.hero {
+	height: 645px;
+	.row.hero { position: relative; }
+
+	.boxes-row {
+		position: absolute;
+		width: 100%;
+		@include grid-row();
+		@include breakpoint(medium) {
+			left: 0;
+			bottom: -55px;
+			border: 2px solid red;
+		}
+
+	}
+}

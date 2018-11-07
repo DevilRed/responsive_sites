@@ -1,0 +1,30 @@
+{
+	"title": "innovative legal advice",
+	"text": [
+		"Specializing in Employment Law,",
+		"Criminal Law, Family Law, and",
+		"Conveyancing & Immigration."
+	],
+	"boxes-content": [
+		{
+			"title": "innovative legal advice",
+			"text": [
+				"Specializing in Employment Law,",
+				"Criminal Law, Family Law, and",
+				"Conveyancing & Immigration."
+			],
+			"box-type": "secondary"
+		},
+		{
+			"title": "practice areas",
+			"text": [
+				"Employment Law  / ",
+				"Family Law​ / Criminal Law  ​/ ",
+				"Child Care Law  ​/",
+				"Conveyancing Housing Law  / ",
+				"Notary Public​  /"
+			],
+			"box-type": "primary"
+		}
+	]
+}
