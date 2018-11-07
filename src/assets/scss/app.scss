@@ -44,7 +44,7 @@
 @include foundation-tooltip;
 @include foundation-top-bar;
 @include foundation-visibility-classes;
-// @include foundation-float-classes;
+@include foundation-float-classes;
 @include foundation-flex-classes;
 
 // @include foundation-prototype-classes;
@@ -70,8 +70,10 @@
 // global styles
 @import 'global/app-dashboard';
 @import 'global/layout';
+@import 'global/typography';
 
 // custom components
-@import 'components/navigation/main-nav';
+/* @import 'components/navigation/main-nav';
+@import 'components/footer'; */
+@import 'components/header';
 
-@import 'components/footer';

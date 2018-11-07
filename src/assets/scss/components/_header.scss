@@ -1,0 +1,74 @@
+#header {
+	background-color: $primary-color;
+}
+#logo {
+	padding: 10px 0;
+
+	h1 {
+		text-transform: uppercase;
+		font-size: 25px;
+		font-weight: 700;
+		line-height: 1.1em;
+		position: relative;
+		a {
+			display: block;
+			color: #fff;
+			position: relative;
+			padding: 8px 0;
+			max-width: 80%;
+			@include breakpoint(small only) {
+				padding: 0;
+			}
+			span {
+				display: inline-block;
+				&.subtitle {
+					text-transform: none;
+					font-size: 14px;
+					@include breakpoint(medium) {
+						position: absolute;
+						width: 117px;
+						bottom: 0;
+						right: -15px;
+					}
+				}// .subtitle
+				&.first {
+					position: relative;
+					bottom: 8px;
+					@include breakpoint(medium) {
+						bottom: auto;
+					}
+				}
+				&.second {
+					display: block;
+					position: relative;
+					bottom: 25px;
+					@include breakpoint(medium) {
+						display: inline-block;
+						bottom: auto;
+						height: 50px;
+					}
+				}// span.second
+			}// span
+			span.subtitle.show-for-small-only {
+				position: relative;
+				bottom: 28px;
+				font-size: 15px;
+				@include opensans-font;
+				font-weight: 400;
+			}
+			@include breakpoint(medium) {
+				max-width: 289px;
+			}
+		}// a
+		#logo-and {
+			margin: 0 3px 0 20px;
+			display: inline-block;
+			@include breakpoint(medium) {
+				margin: 0 3px 0 8px;
+			}
+		}
+	}// h1
+	@include breakpoint(small only) {
+		padding: 8px 0 0 15px;
+	}
+}
