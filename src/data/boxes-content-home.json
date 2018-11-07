@@ -1,10 +1,4 @@
 {
-	"title": "innovative legal advice",
-	"text": [
-		"Specializing in Employment Law,",
-		"Criminal Law, Family Law, and",
-		"Conveyancing & Immigration."
-	],
 	"boxes-content": [
 		{
 			"title": "innovative legal advice",
@@ -24,7 +18,9 @@
 				"Conveyancing Housing Law  / ",
 				"Notary Public​  /"
 			],
-			"box-type": "primary"
+			"box-type": "primary",
+			"anchor-text": "book online >>",
+			"link": "#"
 		}
 	]
 }

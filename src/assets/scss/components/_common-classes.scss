@@ -3,8 +3,8 @@
 	@include grid-column(12);
 	@include breakpoint(medium) {
 		@include grid-column(4);
-		min-height: 246px;
-		max-height: 246px;
+		min-height: 285px;
+		max-height: 285px;
 		&:last-child {
 			float: left !important;
 		}
@@ -30,5 +30,11 @@
 		&:last-child {
 			margin-bottom: 70px;
 		}
+	}
+	.link {
+		color: #40BABC;
+		text-transform: uppercase;
+		display: block;
+		margin-top: 15px;
 	}
 }
