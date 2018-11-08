@@ -54,3 +54,13 @@
 		color: $paragraph-color;
 	}
 }
+.purple-title {
+	background-color: $primary-color;
+	h2 {
+		text-transform: uppercase;
+		text-align: center;
+		color: #fff;
+		font-weight: 600;
+		padding: 8px 0;
+	}
+}

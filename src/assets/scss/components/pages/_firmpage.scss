@@ -22,7 +22,7 @@
 	}
 	.boxes-row {
 		bottom: 0;
-		top: 180px;
+		top: 120px;
 		z-index: 3;
 		margin-top: 0;
 		.float-box {
@@ -42,7 +42,44 @@
 		margin-top: 132px;
 		margin-bottom: 50px;
 		@include breakpoint(medium) {
-			margin-top: 200px;
+			margin-top: 128px;
+		}
+		p {
+			@include breakpoint(small only) {
+				font-size: 16px;
+				padding: 0 8px;
+			}
 		}
 	}
+	.purple-title {
+		margin-bottom: 50px;
+	}
 }// .firm-page
+
+.attorney-box {
+	margin-bottom: 70px;
+	h4 {
+		text-transform: uppercase;
+		margin: 40px 0;
+		@include helvetica-font;
+		font-weight: 600;
+		letter-spacing: 0.05em;
+		line-height: 1.2em;
+		color: #554A58;
+		@include breakpoint(small only) {
+			font-size: 25px;
+			margin: 30px 0;
+			font-weight: 700;
+		}
+	}
+	p {
+		line-height: 1.5em;
+		font-size: 14px;
+		margin: 0;
+		color: #5d5d5d;
+		@include breakpoint(small only) {
+			font-size: 16px;
+			padding: 0 8px;
+		}
+	}
+}

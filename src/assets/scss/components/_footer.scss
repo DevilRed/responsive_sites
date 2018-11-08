@@ -77,6 +77,9 @@
 		}
 	}// .contact-row
 	.map-row {
+		@include breakpoint(medium) {
+			margin-top: 20px;
+		}
 		#map-outer-wrapper {
 			height: 0;
 			width: 90%;
