@@ -1,0 +1,76 @@
+#footer {
+	background-color: $secondaryCustomColor;
+	padding-top: 55px;
+	@include breakpoint(medium) {
+		padding-top: 65px;
+	}
+
+	.contact-row {
+		.columns {
+			&.text {
+				margin-bottom: 20px;
+			}
+			@include breakpoint(medium) {
+				padding: 0;
+			}
+		}
+		h2 {
+			text-transform: uppercase;
+			@include helvetica-font;
+			font-weight: 700;
+			line-height: 1.1em;
+			letter-spacing: 0.05em;
+			font-size: 28px;
+			color: #fff;
+			margin-bottom: 20px;
+			padding-left: 15px;
+			@include breakpoint(medium) {
+				font-size: 32px;
+				margin-bottom: 50px;
+				padding-left: 0;
+			}
+		}
+		p {
+			color: #fff;
+			@include opensans-font;
+			font-weight: 400;
+			line-height: 1.5em;
+			font-size: 17px;
+			line-height: 24px;
+			margin: 0;
+		}
+		.form {
+			input {
+				float: right;
+				outline: none;
+				border: 0;
+			}
+			input:not([type="submit"]) {
+				line-height: 1.4em;
+				@include breakpoint(medium) {
+					width: 268px;
+					height: 33px;
+					margin-right: 3px;
+					margin-bottom: 4px;
+				}
+			}
+			textarea {
+				resize: none;
+				outline: none;
+				border: 0;
+				@include breakpoint(medium) {
+					height: 108px;
+				}
+			}
+			input[type="submit"] {
+				color: #fff;
+				text-transform: capitalize;
+				background-color: rgb(42, 124, 125);
+				@include helvetica-font;
+				font-size: 16px;
+				font-weight: 400;
+				line-height: 24px;
+			}
+		}
+	}// .contact-row
+}
