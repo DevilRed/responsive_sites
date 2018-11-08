@@ -11,7 +11,22 @@
 					<a href="{{this.link}}" class="float-right link">{{this.anchor-text}}</a>
 					</div>
 				{{/each}}
-			{{/ifpage}}
+			{{/ifpage}}<!-- .homepage -->
+
+			{{#ifpage 'firm-page'}}
+				{{#each firm-page-hero.box}}
+					<div class="float-box {{ this.box-type }}">
+						<h4>{{this.title}}</h4>
+						{{#each this.text}}
+						<p>{{ this }}</p>
+					{{/each}}
+					<a href="{{this.link}}" class="float-right link">{{this.anchor-text}}</a>
+					</div>
+				{{/each}}
+			{{/ifpage}}<!-- .firm-page -->
 		</div>
 	</div>
+	{{#ifpage 'firm-page'}}
+		<div class="hero-bg"></div>
+	{{/ifpage}}
 </div>

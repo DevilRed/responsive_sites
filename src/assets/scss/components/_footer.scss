@@ -60,6 +60,7 @@
 				resize: none;
 				outline: none;
 				border: 0;
+				height: 130px;
 				@include breakpoint(medium) {
 					height: 108px;
 				}

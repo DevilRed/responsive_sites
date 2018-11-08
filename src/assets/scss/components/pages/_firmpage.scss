@@ -1,0 +1,34 @@
+.firm-page {
+	.hero.full {
+		max-height: 271px;
+		position: relative;
+		background-size: cover;
+		z-index: 1;
+	}
+	.hero-bg {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: rgba(0, 0, 0, 0.4);
+		z-index: 2;
+		@include breakpoint(small only) {
+			z-index: 0;
+		}
+	}
+	.boxes-row {
+		bottom: 238px;
+		z-index: 3;
+		.float-box {
+			min-height: 225px;
+			max-height: 225px;
+		}
+		@include breakpoint(small only) {
+			.float-box {
+				position: relative;
+				z-index: 5;
+			}
+		}
+	}
+}
