@@ -127,3 +127,16 @@ var initParalaxBg = function(x) {
   });
 }
 initParalaxBg();
+
+// scroll link
+$(document).ready(function (){
+  $('.use-scroll-link').on('click', function (){
+    $('#nav-modal').foundation('close');// close modal
+    let linkTo = $(this).attr('href');
+    linkTo = $(linkTo);
+    $('html, body').animate({
+      scrollTop: linkTo.offset().top
+    }, 2000);
+    return false;
+  });
+});
