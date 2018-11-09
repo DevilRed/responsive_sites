@@ -10,6 +10,7 @@ import Foundation from 'foundation-sites';
 
 import 'tablesaw/dist/tablesaw.jquery';
 import libs from './lib/dependencies';
+import 'fullcalendar';
 window.libs = libs;
 
 $(document).foundation();
@@ -140,3 +141,22 @@ $(document).ready(function (){
     return false;
   });
 });
+
+// calendar page
+$(document).ready(function (){
+  $('#calendar').fullCalendar({
+    header: {
+      left: 'prev,next today',
+      center: 'title',
+      right: 'month,agendaWeek,agendaDay'
+    },
+    dayClick: function (date, jsEvent, view){
+      alert('click on ' + date.format());
+      alert('Coordinates: ' + jsEvent.pageX + ',' + jsEvent.pageY);
+      alert('Current view: ' + view.name);
+    // change the day's background color just for fun
+    $(this).css('background-color', 'red');
+    }
+  });
+});
+
