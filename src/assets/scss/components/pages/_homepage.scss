@@ -1,4 +1,7 @@
 .homepage {
+	.hero.full {
+		background-size: contain;
+	}
 	.text-content {
 		padding: 0 18px;
 		@include breakpoint(medium) {
