@@ -145,10 +145,12 @@ $(document).ready(function (){
 // calendar page
 $(document).ready(function (){
   $('#calendar').fullCalendar({
+    theme: true,
+    defaultView: 'month',
+    monthNamesShort: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+  'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
     header: {
-      left: 'prev,next today',
-      center: 'title',
-      right: 'month,agendaWeek,agendaDay'
+      left: 'title prev,next today',
     },
     dayClick: function (date, jsEvent, view){
       alert('click on ' + date.format());
