@@ -55,11 +55,15 @@
 	.box-wrapper {
 		border: 1px solid rgb(214, 214, 214);
 		padding-top: 25px;
+		position: relative;
 		@include breakpoint(small only) {
 			border-top: 0;
 			border-left: 0;
 			border-right: 0;
 			padding-bottom: 20px;
+			&.last {
+				border-bottom: 0;
+			}
 
 			/* &:last-child {
 				border-bottom: 0;
@@ -80,8 +84,8 @@
 		h3 {
 			text-transform: uppercase;
 			padding-bottom: 15px;
-			// padding-left: 25px;
-			// padding-right: 25px;
+			padding-left: 25px;
+			padding-right: 25px;
 			margin: 0;
 			text-align: center;
 			@include helvetica-font;
@@ -91,6 +95,7 @@
 			@include breakpoint(small only) {
 				text-align: left;
 				font-size: 20px;
+				margin-top: 10px;
 			}
 		}
 		p {
@@ -129,7 +134,10 @@
 					background-color: $secondaryCustomColor;
 					@include breakpoint(medium) {
 						max-width: 130px;
-						margin: 0 auto;
+						position: absolute;
+						bottom: 40px;
+						left: 50%;
+						margin-left: -65px;
 					}
 				}
 			}
