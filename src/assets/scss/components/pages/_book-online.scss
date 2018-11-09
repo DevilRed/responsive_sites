@@ -1,0 +1,143 @@
+.book-online {
+	.hero.full {
+		max-height: 271px;
+		position: relative;
+		background-size: 100% 100%;
+		z-index: 1;
+	}
+	.hero.row {
+		max-height: 271px;
+	}
+	.hero-bg {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: rgba(0, 0, 0, 0.4);
+		z-index: 2;
+		@include breakpoint(small only) {
+			z-index: 0;
+		}
+	}
+	.boxes-row {
+		bottom: 0;
+		top: 120px;
+		z-index: 3;
+		margin-top: 0;
+		.float-box {
+			min-height: 225px;
+			max-height: 225px;
+		}
+		@include breakpoint(small only) {
+			margin-top: 150px;
+			.float-box {
+				position: relative;
+				z-index: 5;
+			}
+		}
+	}// .boxes-row
+
+	.text-content {
+		&.second {
+			margin-top: 20px;
+			margin-bottom: 25px;
+		}
+		@include breakpoint(medium) {
+			margin-top: 128px;
+		}
+	}
+}// .book-online
+
+.service-box {
+	padding-left: 13px;
+	padding-right: 13px;
+	.box-wrapper {
+		border: 1px solid rgb(214, 214, 214);
+		padding-top: 25px;
+		@include breakpoint(small only) {
+			border-top: 0;
+			border-left: 0;
+			border-right: 0;
+			padding-bottom: 20px;
+
+			/* &:last-child {
+				border-bottom: 0;
+			} */
+		}
+		.line-hover-box {
+			border-right: 3px solid transparent;
+			&:hover {
+				border-right: 3px solid $secondaryCustomColor;
+			}
+			@include breakpoint(medium) {
+				padding-top: 55px;
+				padding-bottom: 70px;
+				margin-left: 32px;
+				margin-right: 15px;
+			}
+		}// .line-hover-box
+		h3 {
+			text-transform: uppercase;
+			padding-bottom: 15px;
+			// padding-left: 25px;
+			// padding-right: 25px;
+			margin: 0;
+			text-align: center;
+			@include helvetica-font;
+			font-weight: 400;
+			font-size: 26px;
+			line-height: 1.4em;
+			@include breakpoint(small only) {
+				text-align: left;
+				font-size: 20px;
+			}
+		}
+		p {
+			font-size: 15px;
+			color: rgb(20, 20, 20);
+			@include opensans-font;
+			font-weight: 400;
+			padding-right: 8px;
+
+			&.description {
+				margin-top: 15px;
+				margin: 0;
+				@include breakpoint(small only) {
+					display: none;
+				}
+			}
+			&.learn-more {
+				a {
+					text-transform: capitalize;
+					text-decoration: underline;
+					color: rgb(20, 20, 20);
+					font-size: 17px;
+				}
+				@include breakpoint(small only) {
+					display: none;
+				}
+			}
+			&.book-now {
+				a {
+					display: block;
+					text-transform: uppercase;
+					color: #fff;
+					font-size: 18px;
+					@include helvetica-font;
+					font: 700px;
+					background-color: $secondaryCustomColor;
+					@include breakpoint(medium) {
+						max-width: 130px;
+						margin: 0 auto;
+					}
+				}
+			}
+			@include breakpoint(small only) {
+				&.hourly {
+					float: left;
+				}
+			}
+		}// p
+	}// .box-wrapper
+}// .service-box
