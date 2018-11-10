@@ -144,21 +144,23 @@ $(document).ready(function (){
 
 // calendar page
 $(document).ready(function (){
-  $('#calendar').fullCalendar({
-    theme: true,
+  var $calendar = $("#calendar");
+  $calendar.fullCalendar({
     defaultView: 'month',
     monthNamesShort: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
   'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
     header: {
-      left: 'title prev,next today',
+      left: 'title prev,next,today',
+      right: ''
     },
+    weekends: true,
     dayClick: function (date, jsEvent, view){
-      alert('click on ' + date.format());
-      alert('Coordinates: ' + jsEvent.pageX + ',' + jsEvent.pageY);
-      alert('Current view: ' + view.name);
-    // change the day's background color just for fun
-    $(this).css('background-color', 'red');
-    }
-  });
-});
+      console.log('click on ' + date.format());
+      console.log('Coordinates: ' + jsEvent.pageX + ',' + jsEvent.pageY);
+      console.log('Current view: ' + view.name);
 
+      $(this).siblings('td').removeClass('selected-day');
+      $(this).addClass('selected-day');
+    },
+  });// full calendar
+});

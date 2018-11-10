@@ -1,0 +1,44 @@
+
+// calendar styles
+.fc.ui-widget.fc-ltr{
+  overflow-y: hidden;
+}
+.fc-scroller.fc-day-grid-container {
+  overflow-y: hidden !important;
+}
+.fc table{
+  border-collapse: collapse;
+  font-size: 1em;
+}
+#calendar {
+  width: 590px;
+}
+#calendar .fc-day{
+  border-color: #d6d6d6;
+  vertical-align: top;
+  width: 85px;
+  height: 60px;
+
+  &.selected-day {
+    border: 2px solid $secondaryCustomColor !important;
+  }
+}
+thead, tbody, tfoot {
+  border: 0;
+}
+.fc-day-number {
+  position: absolute;
+  top: 10px;
+  margin-left: 20px;
+  display: block;
+  width: 30px;
+}
+.fc-day-header.ui-widget-header, .fc-head-container.ui-widget-header, .fc-row ui-widget-header{
+  border: 0 !important;
+}
+.fc-head, .fc-content-skeleton thead, div.ui-widget-header > table:nth-child(1) > thead:nth-child(1){
+  background-color: #fff;
+}
+/* .selected-day {
+  border: 2px solid $secondaryCustomColor;
+} */
