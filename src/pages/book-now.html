@@ -2,8 +2,17 @@
 meta-title: Law Firm Website Template
 layout: firm-law-layout
 ---
-{{> hero-parallax img_src="assets/img/firm_hero.jpeg"}}
+<div id="hero">{{> hero-parallax img_src="assets/img/firm_hero.jpeg"}}</div>
 
-<div class="calendar-wrapper row">
-	<div id="calendar"></div>
+<div class="grid-container">
+	<div class="row">
+		<div class="calendar-wrapper small-12 medium-8 columns">
+			<div id="calendar"></div>
+		</div>
+		<div class="right small-12 columns medium-4" data-sticky-container>
+			<div class="sticky" data-sticky data-margin-top="0"data-top-anchor="hero:bottom" data-btm-anchor="footer:top">
+				<p>some content</p>
+			</div>
+		</div>
+	</div>
 </div>
