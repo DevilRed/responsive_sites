@@ -107,6 +107,13 @@
   .hero.row, .hero.full {
     max-height: 271px;
   }
+  .calendar-wrapper {
+    .up-view {
+      a {
+        color: $secondaryCustomColor;
+      }
+    }
+  }
   .page-title {
     text-transform: capitalize;
     font-weight: 400;
