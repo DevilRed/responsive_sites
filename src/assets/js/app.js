@@ -166,6 +166,7 @@ $(document).ready(function (){
         $('.fc-view-container .fc-body').find('td').removeClass('selected-day');
         $(this).addClass('selected-day');
         $('#date-placeholder').text(customFormat);
+        $('.sticky-box .button').removeClass('disable');
       }
     },// dayClick
     handleWindowResize: false
