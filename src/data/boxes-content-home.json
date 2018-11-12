@@ -20,7 +20,7 @@
 			],
 			"box-type": "primary",
 			"anchor-text": "book online >>",
-			"link": "#"
+			"link": "book-online.html"
 		}
 	]
 }
