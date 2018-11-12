@@ -11,6 +11,7 @@ import Foundation from 'foundation-sites';
 import 'tablesaw/dist/tablesaw.jquery';
 import libs from './lib/dependencies';
 import 'fullcalendar';
+import moment from 'moment';
 window.libs = libs;
 
 $(document).foundation();
@@ -156,13 +157,13 @@ $(document).ready(function (){
     weekends: false,
     height: 400,
     dayClick: function (date, jsEvent, view){
-      console.log('click on ' + date.format());
-      console.log('Coordinates: ' + jsEvent.pageX + ',' + jsEvent.pageY);
-      console.log('Current view: ' + view.name);
+      var customFormat = moment.utc(date.format()).format('LL');
+      // console.log('Current view: ' + view.name);
 
       $('.fc-view-container .fc-body').find('td').removeClass('selected-day');
       $(this).addClass('selected-day');
-    },
+      $('#date-placeholder').text(customFormat);
+    },// dayClick
     handleWindowResize: false
   });// full calendar
-});
+});// ready
