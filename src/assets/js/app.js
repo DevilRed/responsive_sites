@@ -153,7 +153,7 @@ $(document).ready(function (){
       left: 'title prev,next,today',
       right: ''
     },
-    weekends: true,
+    weekends: false,
     dayClick: function (date, jsEvent, view){
       console.log('click on ' + date.format());
       console.log('Coordinates: ' + jsEvent.pageX + ',' + jsEvent.pageY);
