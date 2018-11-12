@@ -151,18 +151,22 @@ $(document).ready(function (){
     monthNamesShort: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
   'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
     header: {
-      left: 'title prev,next,today',
+      left: 'title prev,next',
       right: ''
     },
     weekends: false,
     height: 400,
     dayClick: function (date, jsEvent, view){
-      var customFormat = moment.utc(date.format()).format('LL');
-      // console.log('Current view: ' + view.name);
+      if (date.month() !=  view.intervalStart.month()) {
+        //other month day,  do nothing..
+      } else {
+        var customFormat = moment.utc(date.format()).format('LL');
+        // console.log('Current view: ' + view.name);
 
-      $('.fc-view-container .fc-body').find('td').removeClass('selected-day');
-      $(this).addClass('selected-day');
-      $('#date-placeholder').text(customFormat);
+        $('.fc-view-container .fc-body').find('td').removeClass('selected-day');
+        $(this).addClass('selected-day');
+        $('#date-placeholder').text(customFormat);
+      }
     },// dayClick
     handleWindowResize: false
   });// full calendar
