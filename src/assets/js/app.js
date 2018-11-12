@@ -154,13 +154,15 @@ $(document).ready(function (){
       right: ''
     },
     weekends: false,
+    height: 400,
     dayClick: function (date, jsEvent, view){
       console.log('click on ' + date.format());
       console.log('Coordinates: ' + jsEvent.pageX + ',' + jsEvent.pageY);
       console.log('Current view: ' + view.name);
 
-      $(this).siblings('td').removeClass('selected-day');
+      $('.fc-view-container .fc-body').find('td').removeClass('selected-day');
       $(this).addClass('selected-day');
     },
+    handleWindowResize: false
   });// full calendar
 });

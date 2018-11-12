@@ -12,6 +12,10 @@
 }
 #calendar {
   width: 590px;
+
+  @include breakpoint(small only) {
+    width: 100%;
+  }
 }
 #calendar .fc-day{
   border-color: #d6d6d6;
@@ -19,8 +23,13 @@
   width: 85px;
   height: 60px;
 
+  @include breakpoint(small only) {
+    width: 22px;
+    height: 25px;
+  }
+
   &.selected-day {
-    border: 2px solid $secondaryCustomColor !important;
+    border: 2px solid $secondaryCustomColor;
   }
 }
 .fc-view-container {
@@ -40,6 +49,9 @@
         font-weight: 300;
       }
     }
+  }
+  div.fc-week > div > table {
+    border: 0;
   }
 }
 .fc-day-number {
@@ -100,12 +112,18 @@
     font-weight: 400;
     margin-bottom: 75px;
     font-size: 26px;
+    @include breakpoint(small only) {
+      margin-bottom: 20px;
+    }
   }
   .time-zone {
     margin-bottom: 30px;
     a {
       color: $secondaryCustomColor;
       font-size: 18px;
+    }
+    @include breakpoint(small only) {
+      margin-bottom: 10px;
     }
   }
 
