@@ -33,9 +33,12 @@
 		text-transform: capitalize;
 		@include avenirlt-font;
 		font-weight: 400;
-		letter-spacing: 2px;
 		line-height: 21px;
 		font-size: 15px;
+		letter-spacing: 2px;
+		@include breakpoint(medium) {
+			letter-spacing: 0;
+		}
 	}
 }
 .off-canvas-mobile {
