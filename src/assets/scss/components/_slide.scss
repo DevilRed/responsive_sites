@@ -20,7 +20,7 @@
   		line-height: 119px;
   		text-transform: uppercase;
   		color: $white;
-  		margin-bottom: 35px;
+  		margin-bottom: 20px;
   	}
   	h6 {
   		line-height: 1.4em;
@@ -42,7 +42,6 @@
 	padding: 14px 40px;
 }
 .gray-layer {
-	border: 2px solid red;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -51,3 +50,5 @@
 	background-color: $light-gray;
 	opacity: 0.7;
 }
+
+@import "slides/top";
