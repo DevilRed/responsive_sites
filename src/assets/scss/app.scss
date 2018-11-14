@@ -67,5 +67,7 @@
 @import 'mixins/sidelines';
 @import 'mixins/zindex';
 
+@import 'vendor/reset';// eric meyer reset
+
 @import 'global/_typography';
 @import 'components/header';
