@@ -2,4 +2,23 @@
 	.centered-box {
 		margin-top: 15px;
 	}
+	@include breakpoint(small only) {
+		min-height: 648px;
+		background-size: auto 510px;
+		background-position: -200px 0;
+		.centered-box {
+			h3 {
+				font-size: 45px;
+				line-height: 45px;
+			}
+			h6 {
+				line-height: 1.4em;
+				font-size: 13px;
+			}
+			.button {
+				margin-bottom: 100px;
+				font-size: 13px;
+			}
+		}
+	}
 }

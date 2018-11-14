@@ -1,6 +1,10 @@
 #header {
 	padding: 20px 0;
 	background-color: $black;
+
+	@include breakpoint(small only) {
+		margin: 0;
+	}
 	.logo {
 		h1 {
 			margin: 0;
