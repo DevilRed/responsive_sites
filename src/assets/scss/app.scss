@@ -58,17 +58,18 @@
 @import "vendor/index-menu"; */
 
 // mixins
-@import 'mixins/container-border';
+/* @import 'mixins/container-border';
 @import 'mixins/flex';
 @import 'mixins/avatar';
 @import 'mixins/helpers';
 @import 'mixins/pseudo';
 @import 'mixins/push-center';
 @import 'mixins/sidelines';
-@import 'mixins/zindex';
+@import 'mixins/zindex'; */
 
 @import 'vendor/reset';// eric meyer reset
 
 @import 'global/_typography';
 @import 'components/header';
 @import 'components/navigation/main-nav';
+@import 'components/slide';

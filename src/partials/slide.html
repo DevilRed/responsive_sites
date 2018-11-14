@@ -1,0 +1,19 @@
+<div class="slide grid-container full fluid {{#if has-parallax}}paralaxbg{{/if}} {{custom-class}}" style="background-image: url({{img_src}})">
+	<img src="{{img_src}}" alt="slide img" class="invisible">
+	<div class="grid-x">
+		<div class="boxes-row">
+			{{#if top}}
+			<div class="top centered-box text-center">
+				<h3>co-working</h3>
+				<h6>in an innovative environment</h6>
+				<a href="#" class="button primary">book a space</a>
+			</div>
+			{{/if}}
+
+		</div><!-- .boxes-row -->
+	</div><!-- .grid-x -->
+
+	{{#if has-gray-layer}}
+		<div class="gray-layer"></div>
+	{{/if}}
+</div><!-- .slide -->
