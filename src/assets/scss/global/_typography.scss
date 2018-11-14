@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Avenir lt';
+    src: url("../fonts/AvenirLTStd-Light.otf") format('opentype');
+}
+
+@mixin avenirlt-font {
+	font-family: 'Avenir lt';
+	// font-weight: 400;
+}
+@mixin playfair-font {
+	font-family: 'Playfair Display', serif;
+}
+.green-color {
+	color: $primary-color;
+}
+.white-color {
+	color: $white;
+}
