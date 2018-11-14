@@ -1,10 +1,20 @@
 .about.slide {
 	min-height: 817px;
+
+	@include breakpoint(small only) {
+		background-attachment: initial;
+
+	}
 	.about.white {
 		max-width: 614px;
 		background-color: #fff;
 		padding: 87px 75px;
 		text-align: center;
+		@include breakpoint(small only) {
+			width: 90%;
+			max-width: 90%;
+			padding: 0 15px;
+		}
 
 		h2 {
 			@include playfair-font;
@@ -14,6 +24,11 @@
 			letter-spacing: 0.06em;
 			text-transform: uppercase;
 			margin-bottom: 48px;
+			@include breakpoint(small only) {
+				font-size: 32px;
+				margin-top: 45px;
+				margin-bottom: 20px;
+			}
 		}
 		p {
 			@include avenirlt-font;
@@ -21,6 +36,9 @@
 			font-weight: 400;
 			line-height: 1.5em;
 			margin-bottom: 20px;
+			@include breakpoint(small only) {
+				margin-bottom: 10px;
+			}
 		}
 	}
 }
