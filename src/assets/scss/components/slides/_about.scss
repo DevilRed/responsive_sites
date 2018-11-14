@@ -1,0 +1,25 @@
+.about.slide {
+	.about.white {
+		max-width: 614px;
+		background-color: #fff;
+		padding: 87px 75px;
+		text-align: center;
+
+		h2 {
+			@include playfair-font;
+			font-weight: 700;
+			font-size: 46px;
+			line-height: 62px;
+			letter-spacing: 0.06em;
+			text-transform: uppercase;
+			margin-bottom: 48px;
+		}
+		p {
+			@include avenirlt-font;
+			font-size: 15px;
+			font-weight: 400;
+			line-height: 1.5em;
+			margin-bottom: 20px;
+		}
+	}
+}
