@@ -53,9 +53,9 @@
 @include motion-ui-animations;
 
 // vendor styles
-@import "vendor/aos";
+/* @import "vendor/aos";
 @import "vendor/slick-carousel";
-@import "vendor/index-menu";
+@import "vendor/index-menu"; */
 
 // mixins
 @import 'mixins/container-border';
@@ -67,11 +67,5 @@
 @import 'mixins/sidelines';
 @import 'mixins/zindex';
 
-// global styles
-@import 'global/app-dashboard';
-@import 'global/layout';
-
-// custom components
-@import 'components/navigation/main-nav';
-
-@import 'components/footer';
+@import 'global/_typography';
+@import 'components/header';
