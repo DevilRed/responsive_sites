@@ -1,0 +1,40 @@
+.community-slide {
+	img.invisible {
+		display: none;
+	}
+	.boxes-row {
+		@extend .flex-child-auto;
+	}
+	.wrapper {
+		margin-top: 10px;
+		@include xy-cell(10);
+		margin: 0 auto;
+
+		@include breakpoint(medium) {
+			margin-top: 115px;
+		}
+		.title {
+			@include playfair-font;
+			font-weight: 700;
+			font-size: 21px;
+			line-height: 62px;
+			letter-spacing: 0.06em;
+			text-transform: uppercase;
+			@include breakpoint(medium) {
+				font-size: 46px;
+			}
+		}
+		.text {
+			font-size: 14px;
+			line-height: 1.7em;
+			@include avenirlt-font;
+			font-weight: 400;
+			@include breakpoint(medium) {
+				@include xy-cell(5);
+				margin: 0 auto;
+				margin-top: 40px;
+				font-size: 15px;
+			}
+		}
+	}// .wrapper
+}
