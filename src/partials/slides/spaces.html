@@ -2,3 +2,11 @@
 	<h2 class="title text-center">spaces</h2>
 	<p class="text text-center">I'm a paragraph. Click here to add your own text and edit me.</p>
 </div>
+
+<div class="image-boxes grid-x">
+	{{#each imagesForSpacesSlide}}
+	<div class="small-12 medium-6 cell image-box">
+		<img src="assets/img/{{this}}" alt="spaces-img">
+	</div>
+	{{/each}}
+</div>

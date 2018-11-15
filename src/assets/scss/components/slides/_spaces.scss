@@ -1,7 +1,16 @@
 .spaces-slide {
 	.invisible{ display: none; }
-	@include flex;
-	@include flex-align(center, null);
+	.boxes-row {
+		@extend .flex-child-auto;
+	}
+	img {
+		width: auto;
+		height: auto;
+		@include breakpoint(medium) {
+			width: 100%;
+			height: 100%;
+		}
+	}
 	background-color: $primary-color;
 	.wrapper {
 		margin-bottom: 50px;
@@ -28,11 +37,16 @@
 			font-size: 14px;
 			width: 70%;
 			margin: 0 auto;
+			line-height: 1.6em;
 			@include breakpoint(medium) {
 				font-size: 15px;
 				@include xy-cell(12);
 				font-weight: 400;
+				line-height: normal;
 			}
 		}
+	}// .wrapper
+	.image-box {
+		max-height: 180px;
 	}
 }
