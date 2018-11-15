@@ -3,11 +3,23 @@
 	<p class="text text-center">I'm a paragraph. Click here to add your own text and edit me. Let your users get to know you.</p>
 </div>
 
-<div class="carousel">
+<div class="carousel show-for-medium">
 	<div class="cycle-slideshow"
 	    data-cycle-fx=carousel
 	    data-cycle-timeout=1900
 	    data-cycle-carousel-visible=3
+	    data-cycle-carousel-fluid=true
+	    >
+	    {{#each imagesForSlide}}
+	    	<img src="assets/img/{{this}}" alt="image">
+	    {{/each}}
+	</div>
+</div>
+<div class="carousel show-for-small-only">
+	<div class="cycle-slideshow"
+	    data-cycle-fx=carousel
+	    data-cycle-timeout=1900
+	    data-cycle-carousel-visible=1
 	    data-cycle-carousel-fluid=true
 	    >
 	    {{#each imagesForSlide}}

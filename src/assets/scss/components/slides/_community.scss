@@ -42,5 +42,9 @@
 		@include breakpoint(medium) {
 			margin-top: 90px;
 		}
-	}
+		img {
+			opacity: 0.8;
+			cursor: pointer;
+		}
+	}// .carousel
 }
