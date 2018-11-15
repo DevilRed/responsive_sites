@@ -37,4 +37,10 @@
 			}
 		}
 	}// .wrapper
+	.carousel {
+		margin-top: 10px;
+		@include breakpoint(medium) {
+			margin-top: 90px;
+		}
+	}
 }

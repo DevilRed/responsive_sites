@@ -4,5 +4,14 @@
 </div>
 
 <div class="carousel">
-	<p>slides here</p>
+	<div class="cycle-slideshow"
+	    data-cycle-fx=carousel
+	    data-cycle-timeout=1900
+	    data-cycle-carousel-visible=3
+	    data-cycle-carousel-fluid=true
+	    >
+	    {{#each imagesForSlide}}
+	    	<img src="assets/img/{{this}}" alt="image">
+	    {{/each}}
+	</div>
 </div>
