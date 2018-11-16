@@ -48,5 +48,8 @@
 	}// .wrapper
 	.image-box {
 		max-height: 180px;
+		@include breakpoint(medium) {
+			max-height: 371px;
+		}
 	}
 }
