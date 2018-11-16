@@ -1,0 +1,14 @@
+.membership-slide {
+	.invisible{ display: none; }
+	.boxes-row {
+		@extend .flex-child-auto;
+	}
+	.slide-title-wrapper {
+		margin-bottom: 50px;
+		// border: 2px solid red;
+		@include breakpoint(medium) {
+			margin-bottom: 75px;
+			margin-top: 130px;
+		}
+	}// .slide-title-wrapper
+}
