@@ -11,4 +11,18 @@
 			margin-top: 130px;
 		}
 	}// .slide-title-wrapper
+	.membership-items-wrapper {
+		.item {
+			@include flex();
+			@include flex-align(null, middle);
+			img {
+				@include xy-cell(4);
+			}
+			p {
+				@include xy-cell(8);
+				font-family: 'Arial, Helvetica, sans-serif';
+				font-size: 10px;
+			}
+		}
+	}
 }

@@ -2,3 +2,13 @@
 	<h2 class="title text-center">membership</h2>
 	<p class="text text-center">Become a member!</p>
 </div>
+<div class="membership-items-wrapper grid-container">
+	<div class="grid-x">
+		{{#each membershipData}}
+		<div class="small-12 large-4 cell item">
+			<img src="assets/img/{{this.box.icon}}" alt="{{this.box.title}}">
+			<p>{{this.box.title}}</p>
+		</div>
+		{{/each}}
+	</div>
+</div>
