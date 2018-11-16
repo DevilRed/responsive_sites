@@ -47,8 +47,14 @@
 		}
 	}// .wrapper
 	.image-box {
-		max-height: 180px;
 		position: relative;
+		a {
+			@include breakpoint(small only) {
+				img {
+					height: 100%;
+				}
+			}
+		}
 		&:hover {
 			.hover-box {
 				visibility: visible;
