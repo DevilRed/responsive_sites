@@ -48,8 +48,51 @@
 	}// .wrapper
 	.image-box {
 		max-height: 180px;
+		position: relative;
+		&:hover {
+			.hover-box {
+				visibility: visible;
+			}
+		}
 		@include breakpoint(medium) {
 			max-height: 371px;
 		}
-	}
-}
+		.hover-box {
+			visibility: hidden;
+			@include flex-align(null, bottom);
+			padding: 0 20px 20px 20px;
+			background-color: rgba(33,33,33,0.6);
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			z-index: 2;
+			.icon{
+				width: auto;
+				max-height: 20px;
+			}
+			.middle-text {
+				h2 {
+					text-transform: uppercase;
+					@include playfair-font;
+					font-weight: 700;
+					letter-spacing: 0.06em;
+					font-size: 35px;
+					color: $white;
+				}
+			}
+			.love-box {
+			.counter {
+				position: relative;
+				bottom: 2px;
+				left: 8px;
+			}
+			}
+			span {
+				color: $white;
+				@include avenirlt-font;
+			}
+		}// .hover-box
+	}// .image-box
+}// .spaces-slide

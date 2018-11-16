@@ -6,7 +6,20 @@
 <div class="image-boxes grid-x">
 	{{#each imagesForSpacesSlide}}
 	<div class="small-12 medium-6 cell image-box">
-		<img src="assets/img/{{this}}" alt="spaces-img">
+		<a href="{{this.space.link}}"><img src="assets/img/{{this.space.image}}" alt="{{this.space.title}}"></a>
+
+		<div class="show-for-medium hover-box flex-container align-justify">
+			<div class="love-box">
+				<a href="#"><img src="assets/img/love-white-icon1.png" alt="love" class="icon"></a>
+				<span class="counter">{{this.space.counter}}</span>
+			</div>
+			<div class="middle-text align-self-middle">
+				<h2>{{this.space.title}}</h2>
+			</div>
+			<div class="share-box">
+				<a href="#"><img src="assets/img/white-share-icon.png" alt="share" class="icon"></a>
+			</div>
+		</div>
 	</div>
 	{{/each}}
 </div>
