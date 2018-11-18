@@ -15,13 +15,45 @@
 		.item {
 			@include flex();
 			@include flex-align(null, middle);
+			margin: 15px 0;
+			@include breakpoint(medium) {
+				margin: 0;
+			}
+			@include breakpoint(small only) {
+				&:nth-of-type(1) {
+					order: 1;
+				}
+				&:nth-of-type(3) {
+					order: 2;
+				}
+				&:nth-of-type(4) {
+					order: 3;
+				}
+				&:nth-of-type(5) {
+					order: 4;
+				}
+				&:nth-of-type(6) {
+						order: 5;
+				}
+				&:nth-of-type(2) {
+					order: 6;
+				}
+			}
 			img {
 				@include xy-cell(4);
+				max-width: 50px;
+				@include breakpoint(small only) {
+					max-width: 31px;
+				}
 			}
 			p {
 				@include xy-cell(8);
 				font-family: 'Arial, Helvetica, sans-serif';
-				font-size: 10px;
+				font-size: 15px;
+				@include avenirlt-font;
+				@include breakpoint(small only) {
+					font-size: 14px;
+				}
 			}
 		}
 	}
