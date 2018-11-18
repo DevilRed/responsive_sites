@@ -63,6 +63,9 @@
 		@include breakpoint(medium) {
 			max-height: 371px;
 		}
+		@include breakpoint(xlarge) {
+			max-height: 516px;
+		}
 		.hover-box {
 			visibility: hidden;
 			@include flex-align(null, bottom);
