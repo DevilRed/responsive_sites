@@ -1,12 +1,23 @@
 ---
 meta-title: Coworking Space  Website Template
 layout: coworking-layout
+spaces:
+  - box: {image: assets/img/book-space/book-space-img1.jpg, title: open space, rate: "200.00", text:"Describe your service here. What makes it great? Use short catchy text to tell people what you offer, and the benefits they will receive. A great description gets readers..."}
+  - box: {image: assets/img/book-space/book-space-img2.jpg, title: events, rate: "480.00", text:"Describe your service here. What makes it great? Use short catchy text to tell people what you offer, and the benefits they will receive. A great description gets readers..."}
+  - box: {image: assets/img/book-space/book-space-img3.jpg, title: meeting rooms, rate: "60.00", text:"Describe your service here. What makes it great? Use short catchy text to tell people what you offer, and the benefits they will receive. A great description gets readers..."}
+  - box: {image: assets/img/book-space/book-space-img4.jpg, title: private office, rate: "400.00", text:"Describe your service here. What makes it great? Use short catchy text to tell people what you offer, and the benefits they will receive. A great description gets readers..."}
 ---
 
 <div class="grid-container">
 	<div class="grid-x">
 		<div class="small-12 cell">
 			<h2 class="title text-center">book your space</h2>
+
+			<div class="spaces-wrapper">
+				{{#each spaces}}
+					{{> space-box image=this.box.image title=this.box.title rate=this.box.rate text=this.box.text}}
+				{{/each}}
+			</div>
 		</div>
 	</div>
 </div>

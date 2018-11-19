@@ -1,5 +1,5 @@
 .book-your-space {
-	border: 2px solid red;
+	background-color: #FAFAFA;
 	.title {
 		@include playfair-font;
 		font-size: 26px;
@@ -8,7 +8,7 @@
 		padding-bottom: 37px;
 		text-transform: uppercase;
 		@include breakpoint(medium) {
-			margin-top: 90px;
+			// margin-top: 90px;
 		}
 	}
-}
+}// .book-your-space

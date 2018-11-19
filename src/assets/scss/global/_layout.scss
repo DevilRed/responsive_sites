@@ -36,3 +36,38 @@
 .app-dashboard-sidebar {
 	display: none;
 }
+
+.space-box {
+	border: 1px solid rgba(186, 184, 184, 0.28);
+	margin-bottom: 15px;
+
+	.image-wrapper {
+		max-height: 325px;
+		overflow-y: hidden;
+	}
+	.content {
+		@include breakpoint(small only) {
+			border: 2px solid red;
+		}
+		.title {
+			@include playfair-font;
+			text-transform: capitalize;
+			font-size: 18px;
+			padding-bottom: 10px;
+			@include breakpoint(medium) {
+				font-size: 22px;
+			}
+		}
+		.rate {
+			span {
+				font-weight: 600;
+				@include avenirlt-font;
+				font-size: 16px;
+			}
+		}
+		.button {
+			margin-top: 15px;
+			text-transform: capitalize;
+		}
+	}// .content
+}
