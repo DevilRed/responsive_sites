@@ -1,0 +1,45 @@
+#footer {
+	padding: 20px 0;
+	background-color: $black;
+
+	@include breakpoint(small only) {
+		margin: 0;
+	}
+
+	.copy {
+		letter-spacing: 0.1em;
+		line-height: 17px;
+		@include avenirlt-font;
+		font-size: 14px;
+		font-weight: 400;
+		color: rgb(186, 184, 184);
+		@include breakpoint(small only) {
+			text-align: center;
+			width: 90%;
+			margin: 0 auto;
+			margin-top: 15px;
+		}
+	}
+	.social {
+		text-align: center;
+		@include breakpoint(medium) {
+			text-align: right;
+		}
+		a {
+			display: inline-block;
+			margin-right: 15px;
+			color: rgb(186, 184, 184);
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+	@include breakpoint(small only) {
+		.copy-wrapper {
+			order: 2;
+		}
+		.social-wrapper {
+			order: 1;
+		}
+	}
+}
