@@ -20,3 +20,16 @@ window.libs = libs;
 $(document).foundation();
 
 initParalaxBg()
+
+// scroll link
+$(document).ready(function (){
+  $('.use-scroll-link').on('click', function (){
+    $('.off-canvas').foundation('close');
+    let linkTo = $(this).attr('href');
+    linkTo = $(linkTo);
+    $('html, body').animate({
+      scrollTop: linkTo.offset().top
+    }, 2000);
+    return false;
+  });
+});
