@@ -71,7 +71,10 @@
 
 @import 'global/_typography';
 @import 'global/layout';
+// landing page
 @import 'components/header';
 @import 'components/navigation/main-nav';
 @import 'components/slide';
 @import 'components/footer';
+
+@import 'components/book-your-space';
