@@ -7,8 +7,19 @@
 		font-weight: 400;
 		padding-bottom: 37px;
 		text-transform: uppercase;
+		margin-top: 75px;
 		@include breakpoint(medium) {
-			// margin-top: 90px;
+			margin-top: 90px;
+		}
+	}
+	.spaces-wrapper {
+		margin-bottom: 40px;
+		.space-box {
+			&:hover {
+				.space-box-hover {
+					@include flex();
+				}
+			}
 		}
 	}
 }// .book-your-space

@@ -42,12 +42,16 @@
 	margin-bottom: 15px;
 
 	.image-wrapper {
+		position: relative;
 		max-height: 325px;
 		overflow-y: hidden;
 	}
 	.content {
 		@include breakpoint(small only) {
-			border: 2px solid red;
+			width: 100%;
+			.title {
+				margin-top: 20px;
+			}
 		}
 		.title {
 			@include playfair-font;
@@ -64,10 +68,41 @@
 				@include avenirlt-font;
 				font-size: 16px;
 			}
-		}
+		}// .rate
 		.button {
 			margin-top: 15px;
 			text-transform: capitalize;
+			&.primary {
+				@include breakpoint(small only) {
+					width: 100%;
+				}
+			}
 		}
 	}// .content
-}
+
+	.space-box-hover {
+		background-color: #fff;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		@include flex();
+		@include flex-align(center, middle);
+		display: none;
+		p {
+			@include avenirlt-font;
+			font-weight: 600;
+			line-height: 24px;
+			color: rgb(33, 33, 33);
+			font-size: 16px;
+			@include xy-cell(9);
+			a {
+				color: $black;
+				text-decoration: underline;
+				text-transform: capitalize;
+				font-weight: 700;
+			}
+		}
+	}// .space-box-hover
+}// .space-box
