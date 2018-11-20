@@ -3,6 +3,8 @@ import whatInput from 'what-input';
 import { initParalaxBg } from "./lib/paralaxbg";
 import { cycle } from "./lib/jquery-cycle";
 import { cycleCarousel } from "./lib/jquery-cycle-carousel";
+import 'fullcalendar';
+import moment from 'moment';
 
 window.$ = $;
 cycle();
@@ -37,4 +39,31 @@ $(document).ready(function (){
     }
     return false;
   });
+
+  // calendar
+  var $calendar = $("#calendar");
+  $calendar.fullCalendar({
+    defaultView: 'month',
+    monthNamesShort: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+  'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+    header: {
+      left: 'title prev,next today',
+      right: ''
+    },
+    weekends: false,
+    height: 400,
+    dayClick: function (date, jsEvent, view){
+      if (date.month() !=  view.intervalStart.month()) {
+        //other month day,  do nothing..
+      } else {
+        var customFormat = moment.utc(date.format()).format('LL');
+
+        $('.fc-view-container .fc-body').find('td').removeClass('selected-day');
+        $(this).addClass('selected-day');
+        $('#date-placeholder').text(customFormat);
+        $('.sticky-box .button').removeClass('disable');
+      }
+    },// dayClick
+    handleWindowResize: false
+  });// full calendar
 });

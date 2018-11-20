@@ -53,21 +53,22 @@
 @include motion-ui-animations;
 
 // vendor styles
-/* @import "vendor/aos";
+@import "vendor/aos";
 @import "vendor/slick-carousel";
-@import "vendor/index-menu"; */
+@import "vendor/index-menu";
 
 // mixins
-/* @import 'mixins/container-border';
+@import 'mixins/container-border';
 @import 'mixins/flex';
 @import 'mixins/avatar';
 @import 'mixins/helpers';
 @import 'mixins/pseudo';
 @import 'mixins/push-center';
 @import 'mixins/sidelines';
-@import 'mixins/zindex'; */
+@import 'mixins/zindex';
 
 @import 'vendor/reset';// eric meyer reset
+@import 'vendor/fullcalendar';
 
 @import 'global/_typography';
 @import 'global/layout';
@@ -79,3 +80,4 @@
 
 @import 'components/book-your-space';
 @import 'components/space-learn-more';
+@import 'components/book-now';

@@ -1,0 +1,137 @@
+.book-now {
+  min-height: 800px;
+  .page-title {
+    @include playfair-font;
+    text-transform: capitalize;
+    margin-top: 20px;
+    @include breakpoint(medium) {
+      font-size: 26px;
+      line-height: 39px;
+      margin-bottom: 70px;
+    }
+  }
+  .up-view {
+    margin: 15px 0 30px 0;
+    @include breakpoint(medium) {
+      max-width: 590px;
+    }
+  }
+  .time-zone {
+    margin-bottom: 20px;
+  }
+}// .book-now
+
+// calendar styles
+.fc.ui-widget.fc-ltr{
+  overflow-y: hidden;
+}
+.fc-scroller.fc-day-grid-container {
+  overflow-y: hidden !important;
+}
+.fc table{
+  border-collapse: collapse;
+  font-size: 1em;
+}
+#calendar {
+  width: 590px;
+
+  @include breakpoint(small only) {
+    width: 100%;
+  }
+}
+#calendar .fc-day{
+  border-color: #d6d6d6;
+  vertical-align: top;
+  width: 85px;
+  height: 60px;
+  &:hover {
+    border-color: $primary-color;
+  }
+
+  @include breakpoint(small only) {
+    width: 22px;
+    height: 25px;
+  }
+
+  &.selected-day {
+    border: 2px solid $primary-color;
+  }
+  &.fc-other-month.fc-future {
+    display: none;
+  }
+}// .fc-day
+.fc-view-container {
+  thead {
+    border: 0;
+    td {
+      border: 0;
+    }
+    th {
+      background-color: #fff;
+      border: 0 !important;
+    }
+  }
+  tbody {
+    .fc-day-top {
+      span {
+        font-weight: 300;
+      }
+    }
+  }
+  div.fc-week > div > table {
+    border: 0;
+  }
+}
+.fc.day-top {
+  border: 2px solid red;
+}
+.fc-day-number {
+  position: absolute;
+  top: 10px;
+  margin-left: 20px;
+  display: block;
+  width: 30px;
+}
+.fc-day-header.ui-widget-header, .fc-head-container.ui-widget-header, .fc-row ui-widget-header{
+  border: 0 !important;
+}
+.fc-head, .fc-content-skeleton thead, div.ui-widget-header > table:nth-child(1) > thead:nth-child(1){
+  background-color: #fff;
+}
+.fc-state-default {
+  background-color: #fff !important;
+}
+.fc-prev-button, .fc-next-button {
+  max-height: 27px;
+  max-width: 32px;
+  position: relative;
+  padding: 0 !important;
+  text-align: center;
+  span.fc-icon {
+    font-size: 12px;
+    position: relative;
+    top: -2px;
+  }
+}
+.fc-today-button {
+  max-height: 27px;
+  margin-left: 10px !important;
+  background-color: #fff;
+  border: 1px solid  #000;
+  border-radius: 0 !important;
+  color: $black !important;
+  text-transform: capitalize;
+  line-height: 27px;
+  font-weight: 700;
+  color: #000 !important;
+}
+.fc-left {
+  margin-top: 8px;
+  h2 {
+    font-size: 16px;
+    color: $black;
+    line-height: 27px;
+    @include playfair-font;
+  }
+}
+//
