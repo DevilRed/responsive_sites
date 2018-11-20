@@ -1,3 +1,7 @@
+body {
+	background-color: #FAFAFA;
+}
+
 .slide-title-wrapper {
 	margin-bottom: 50px;
 	@include breakpoint(medium) {
