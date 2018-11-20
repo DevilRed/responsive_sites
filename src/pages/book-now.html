@@ -2,9 +2,9 @@
 meta-title: Coworking Space  Website Template
 layout: coworking-layout
 ---
-<div class="grid-container">
+<div class="grid-container body">
 	<div class="grid-x align-center">
-		<div class="small-12 cell page-title">
+		<div class="small-12 cell page-title" id="page-title">
 			<h2>schedule online</h2>
 		</div>
 		<div class="small-12 medium-8 cell">
@@ -14,6 +14,21 @@ layout: coworking-layout
 				<a href="#">Weekly view <i class="fas fa-arrow-up"></i></a>
 			</p>
 		</div>
-		<div class="small-12 medium-4 cell"></div>
+		<div class="small-12 medium-3 medium-offset-1 cell hide-for-small-only" data-sticky-container>
+			<div class="sticky" data-sticky data-margin-top="5" data-top-anchor="page-title:bottom" data-btm-anchor="footer:top">
+				<div class="sticky-box hide-for-small-only">
+					<div class="head">
+						<h2 class="title">Open Space</h2>
+						<p class="subtitle">1 hr <span class="separator">|</span> $200.00</p>
+					</div>
+					<div class="body">
+						<p class="date" id="date-placeholder"></p>
+					</div>
+					<div class="footer">
+						<button class="button secondary disable">Next</button>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
