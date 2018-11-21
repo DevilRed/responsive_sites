@@ -56,6 +56,7 @@
 @import "vendor/aos";
 @import "vendor/slick-carousel";
 @import "vendor/index-menu";
+@import "vendor/reset";
 
 // mixins
 @import 'mixins/container-border';
@@ -68,10 +69,12 @@
 @import 'mixins/zindex';
 
 // global styles
-@import 'global/app-dashboard';
 @import 'global/layout';
+@import 'global/_typography';
 
 // custom components
 @import 'components/navigation/main-nav';
-
 @import 'components/footer';
+@import 'components/header';
+@import 'components/home-top';
+@import 'components/home-bottom';

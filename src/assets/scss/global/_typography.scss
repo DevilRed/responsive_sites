@@ -1,0 +1,12 @@
+body, a, p, span, h1, h2, h3, h4, h5, input, select, textarea {
+	font-family: 'Nunito', sans-serif;
+	color: #605E5E;
+}
+a {
+	outline: none;
+}
+
+@mixin futura-light-font() {
+	font-family: 'Nunito', sans-serif;
+	font-weight: 300;
+}

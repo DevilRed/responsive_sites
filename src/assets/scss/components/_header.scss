@@ -1,0 +1,52 @@
+#header {
+	.logo {
+		position: relative;
+		background-color: #ccc;
+		width: 100%;
+		height: auto;
+		@include flex();
+		@include flex-align(null, bottom);
+		@include breakpoint(medium) {
+			margin-left: 80px;
+			height: 167px;
+			width: 165px;
+		}
+		.svg-outer {
+			width: 62px;
+			height: 62px;
+			display: block;
+			position: absolute;
+			@include breakpoint(medium) {
+				width: 68px;
+				height: 68px;
+			}
+		}
+		.logo-name {
+			h1 {
+				@include futura-light-font;
+				text-transform: capitalize;
+				color: #fff;
+				font-size: 16px;
+				font-weight: 300;
+				letter-spacing: 0.15em;
+				padding-left: 36%;
+				@include breakpoint(medium) {
+					font-size: 24px;
+					padding-left: 15px;
+					font-weight: 400;
+				}
+			}
+		}
+		.logo-wrapper {
+			height: 68px;
+			width: 100%;
+			position: relative;
+			margin: 15px 0 15px 15px;
+			@include flex();
+			@include flex-align(null, middle);
+			@include breakpoint(medium) {
+				margin: 0 0 22px 22px;
+			}
+		}
+	}
+}
