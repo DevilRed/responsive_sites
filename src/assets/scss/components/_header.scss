@@ -1,4 +1,8 @@
 #header {
+	position: relative;
+	.content-wrapper {
+		position: relative;
+	}
 	.logo {
 		position: relative;
 		background-color: #ccc;
@@ -23,7 +27,7 @@
 		}
 		.logo-name {
 			h1 {
-				@include futura-light-font;
+				@include futura-font;
 				text-transform: capitalize;
 				color: #fff;
 				font-size: 16px;

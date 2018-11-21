@@ -350,7 +350,7 @@ $closebutton-offset-vertical: (
   medium: 0.5rem,
 );
 $closebutton-size: (
-  small: 1.5em,
+  small: 2em,
   medium: 2em,
 );
 $closebutton-lineheight: 1;
@@ -732,7 +732,7 @@ $responsive-embed-ratios: (
 // 47. Reveal
 // ----------
 
-$reveal-background: $white;
+$reveal-background: rgb(14, 46, 71);
 $reveal-width: 600px;
 $reveal-max-width: $global-width;
 $reveal-padding: $global-padding;
@@ -828,7 +828,7 @@ $titlebar-color: $white;
 $titlebar-padding: 0.5rem;
 $titlebar-text-font-weight: bold;
 $titlebar-icon-color: $white;
-$titlebar-icon-color-hover: $medium-gray;
+$titlebar-icon-color-hover: #fff;// $medium-gray
 $titlebar-icon-spacing: 0.25rem;
 
 // 54. Tooltip

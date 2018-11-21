@@ -1,0 +1,23 @@
+<nav id="nav" class="">
+	<ul class="menu medium-horizontal show-for-medium">
+		{{#each navOptions}}
+			<li><a href="#">{{this}}</a></li>
+		{{/each}}
+	</ul>
+	<div class="hide-for-medium title-bar mobile-nav" data-hide-for="medium">
+		<button class="menu-icon" type="button" data-open="nav-modal"></button>
+	</div>
+</nav>
+
+<!-- small only -->
+
+<div class="reveal" id="nav-modal" data-reveal>
+	<button class="close-button" data-close aria-label="Close modal" type="button">
+		<span aria-hidden="true">&times;</span>
+	</button>
+	<ul class="menu vertical">
+		{{#each navOptions}}
+			<li><a href="#">{{this}}</a></li>
+		{{/each}}
+	</ul>
+</div>
