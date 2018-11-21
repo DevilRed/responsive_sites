@@ -1,0 +1,20 @@
+#footer {
+	background-color: #fff;
+	margin: 0;
+	p {
+		@include futura-font;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 18px;
+		padding-bottom: 10px;
+		@include breakpoint(medium) {
+			padding-bottom: 30px;
+		}
+		&.copy {
+			text-align: center;
+		}
+		&.proud {
+			text-align: center;
+		}
+	}
+}
