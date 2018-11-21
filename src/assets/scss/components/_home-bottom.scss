@@ -65,5 +65,19 @@
 				}
 			}
 		}// .subscribe-form
-		}// .subscribe-box
+	}// .subscribe-box
+	.social-box {
+		margin-bottom: 175px;
+		.social-links {
+			a {
+				color: #000;
+				display: inline-block;
+				font-size: 22px;
+				margin-right: 17px;
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+		}
+	}
 }// ..home-bottom
