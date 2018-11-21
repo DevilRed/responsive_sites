@@ -1,0 +1,69 @@
+.home-bottom {
+	min-height: 800px;
+	background-image: url('../img/bg2.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	.about {
+		h2 {
+			text-transform: uppercase;
+			@include futura-font;
+			font-size: 28px;
+			font-weight: 400;
+			line-height: 37px;
+			color: #000;
+			letter-spacing: 0.2em;
+			margin-bottom: 40px;
+			@include breakpoint(medium) {
+				margin-top: 400px;
+			}
+		}
+		p {
+			@include futura-font;
+			line-height: 1.6em;
+			font-size: 16px;
+			font-weight: 400;
+			color: rgb(14, 46, 71);
+		}
+	}// .about
+	.subscribe-box {
+		.subscribe-title {
+			margin-top: 70px;
+			margin-bottom: 60px;
+			text-align: center;
+			color: #0E2E47;
+			font-size: 19px;
+			line-height: 26px;
+		}
+		.subscribe-form {
+			padding: 20px 20px 4px 20px;
+			margin-top: 35px;
+			input {
+				display: inline-block;
+				height: 42px;
+				&[type="text"] {
+					margin-right: 12px;
+					padding: 8px;
+					min-height: 35px;
+					@include futura-font;
+					font-size: 16px;
+					line-height: 1.4em;
+					font-weight: 400;
+					border: 1px solid rgb(14, 46, 71);
+				}
+				&[type="submit"] {
+					border: 0;
+					background-color: rgb(14, 46, 71);
+					color: #fff;
+					text-transform: capitalize;
+					display: block;
+					width: 80%;
+				}
+			}// input
+			.medium-8 {
+				@include breakpoint(medium) {
+					padding-right: 10px;
+				}
+			}
+		}// .subscribe-form
+		}// .subscribe-box
+}// ..home-bottom

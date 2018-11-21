@@ -36,8 +36,16 @@
 						font-weight: 600;
 						letter-spacing: 0.25em;
 					}
-				}
-			}
-		}
+				}// .content
+			}// .hour-wrapper
+		}// .svg-outer
+	}// .clock-box
+}// .home-top
+
+.home-top-container {
+	// border: 2px solid red;
+	min-height: 800px;
+	@include breakpoint(medium) {
+		margin-top: -50px;
 	}
 }
