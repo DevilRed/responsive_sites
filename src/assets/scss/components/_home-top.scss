@@ -1,0 +1,43 @@
+.home-top {
+	.clock-box {
+		.svg-outer {
+			position: relative;
+			width: 650px;
+			height: 650px;
+
+			.hour-wrapper {
+				// border: 2px solid red;
+				display: inline-block;
+				position: absolute;
+				top: 65px;
+				left: 65px;
+
+				.content {
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					left: 0;
+					right: 0;
+					h3, h2 {
+						color: #fff;
+						text-transform: uppercase;
+						@include futura-font;
+						text-align: center;
+					}
+					h3 {
+						letter-spacing: 0.2em;
+						font-size: 19px;
+						font-weight: 400;
+						line-height: 16px;
+					}
+					h2 {
+						line-height: 1.2em;
+						font-size: 85px;
+						font-weight: 600;
+						letter-spacing: 0.25em;
+					}
+				}
+			}
+		}
+	}
+}
