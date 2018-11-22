@@ -94,3 +94,19 @@ $('[data-app-dashboard-toggle-shrink]').on('click', function(e) {
   e.preventDefault();
   $(this).parents('.app-dashboard').toggleClass('shrink-medium').toggleClass('shrink-large');
 });
+
+
+// scroll link
+$(document).ready(function (){
+  $('.use-scroll-link').on('click', function (){
+    let linkTo = $(this).attr('href');
+    // console.log('aqui');
+    // console.log(linkTo);
+    $('#nav-modal').foundation('close');
+    linkTo = $(linkTo);
+    $('html, body').animate({
+      scrollTop: linkTo.offset().top
+    }, 2000);
+    return false;
+  });
+});
