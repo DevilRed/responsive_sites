@@ -1,0 +1,17 @@
+.logo {
+	h1 {
+		a {
+			span {
+				text-transform: uppercase;
+				@include tahoma-font;
+				font-size: 17px;
+				letter-spacing: 0.2em;
+				line-height: 21px;
+				border-bottom: 3px solid rgb(64, 83, 87);
+				color: rgb(64, 83, 87);
+				font-weight: 700;
+				padding-bottom: 2px;
+			}
+		}
+	}
+}

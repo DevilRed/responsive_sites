@@ -1,7 +1,81 @@
-$app-dashboard-top-nav-height: rem-calc(55);
-
-.app-dashboard-top-nav-bar  {
-  height: $app-dashboard-top-nav-height;
-  width: 100%;
-  flex: 0 0 $app-dashboard-top-nav-height;
+.nav-container {
+	@include flex();
+	@include flex-align(right, null);
+	a {
+		text-transform: capitalize;
+		@include raleway-font;
+		padding: 0 15px;
+		font-weight: 400;
+		font-size: 15px;
+		text-align: center;
+		line-height: 37px;
+		color: #9C9C9C;
+		padding: 0 15px;
+		display: block;
+		&.active, &:hover {
+			color: #607D82;
+		}
+	}// a
+	li {
+		@include breakpoint(medium) {
+			width: 122px;
+		}
+	}// li
+	.title-bar {
+		@include flex-order(1);
+		background-color: rgb(96, 125, 130);
+		border-radius: 4px;
+		padding: 10px;
+		.menu-icon {
+			margin: 0;
+			width: 30px;
+			height: 30px;
+			&::after {
+				height: 3px;
+				top: 5px;
+				left: 2px;
+				box-shadow: 0 9px 0 #ffffff, 0 18px 0 #ffffff;
+				width: 90%;
+			}
+			&:hover::after {
+				background-color: #fff;
+			}
+		}// .menu-icon
+	}// .title-bar
 }
+.cart {
+	a {
+		background-image: url('../img/cartIcon.png');
+		background-repeat: no-repeat;
+		display: block;
+		width: 50px;
+		height: 50px;
+		background-size: contain;
+		@include breakpoint(medium) {
+			width: 30px;
+			height: 30px;
+		}
+	}
+}
+
+#nav-modal {
+	background-color: rgb(96, 125, 130);
+	padding-top: 90px;
+	a {
+		color: #fff;
+		@include raleway-font;
+		display: block;
+		text-align: center;
+		text-transform: capitalize;
+		letter-spacing: 2px;
+		line-height: 21px;
+		font-size: 15px;
+
+		&.active {
+			color: #202A2B;
+		}
+	}// a
+	.close-button {
+		color: #fff;
+	}
+}// #nav-modal

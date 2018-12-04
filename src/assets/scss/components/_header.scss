@@ -1,0 +1,13 @@
+@import 'logo';
+
+#header {
+	background-color: rgba(255, 255, 255, 0.9);
+	.grid-x {
+		height: 92px;
+		@include flex-align(null, middle);
+		@include breakpoint(medium) {
+			height: 117px;
+			@include flex-align(center, middle);
+		}
+	}
+}

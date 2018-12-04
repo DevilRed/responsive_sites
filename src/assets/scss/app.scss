@@ -47,7 +47,6 @@
 // @include foundation-float-classes;
 @include foundation-flex-classes;
 
-// @include foundation-prototype-classes;
 
 @include motion-ui-transitions;
 @include motion-ui-animations;
@@ -70,9 +69,12 @@
 
 // global styles
 // @import 'global/app-dashboard';
-@import 'global/layout';
+@import 'global/base';
+@import 'global/typography';
 
 // custom components
+@import 'components/header';
 @import 'components/navigation/main-nav';
+// @import 'components/navigation/main-nav';
 
-@import 'components/footer';
+// @import 'components/footer';

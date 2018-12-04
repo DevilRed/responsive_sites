@@ -1,0 +1,25 @@
+<div class="nav-container">
+	<div class="title-bar hide-for-medium primary" data-hide-for="medium">
+		<button class="menu-icon" type="button" data-open="nav-modal"></button>
+	</div>
+	<ul class="medium-horizontal menu show-for-medium">
+		{{#each navOptions}}
+			<li><a href="#">{{ this }}</a></li>
+		{{/each}}
+	</ul>
+	<div class="cart">
+		<a href="#"></a>
+	</div>
+</div>
+
+<div class="reveal show-for-small-only" id="nav-modal" data-reveal>
+    <ul class="menu vertical">
+      {{#each navOptions}}
+				<li><a href="#">{{ this }}</a></li>
+			{{/each}}
+    </ul>
+    <button class="close-button" data-close aria-label="Close modal" type="button">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+</div>

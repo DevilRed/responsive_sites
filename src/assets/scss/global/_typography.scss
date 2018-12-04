@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Tahoma lt';
+    src: url("../fonts/TahomaRegular.ttf") format('truetype');
+}
+
+@mixin tahoma-font {
+	font-family: 'Tahoma lt';
+}
+
+@mixin raleway-font {
+	font-family: 'Raleway', sans-serif;
+}
+
+
+p, a, span, h1, h2, h3, h4, h5, h6 {
+	@include tahoma-font;
+}
