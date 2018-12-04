@@ -53,22 +53,23 @@
 @include motion-ui-animations;
 
 // vendor styles
-@import "vendor/aos";
+/* @import "vendor/aos";
 @import "vendor/slick-carousel";
-@import "vendor/index-menu";
+@import "vendor/index-menu"; */
+@import "vendor/reset";
 
 // mixins
-@import 'mixins/container-border';
+/* @import 'mixins/container-border';
 @import 'mixins/flex';
 @import 'mixins/avatar';
 @import 'mixins/helpers';
 @import 'mixins/pseudo';
 @import 'mixins/push-center';
 @import 'mixins/sidelines';
-@import 'mixins/zindex';
+@import 'mixins/zindex'; */
 
 // global styles
-@import 'global/app-dashboard';
+// @import 'global/app-dashboard';
 @import 'global/layout';
 
 // custom components
