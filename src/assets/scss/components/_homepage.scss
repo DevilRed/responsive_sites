@@ -1,1 +1,56 @@
 @import 'hero';
+// masonry
+$masonry-css-column-gap: $global-margin;
+
+.masonry-css {
+  column-count: 1;
+  column-gap: $masonry-css-column-gap;
+
+  @include breakpoint(medium) {
+    column-count: 3;
+    min-height: 1980px;
+  }
+}
+
+.masonry-css-item {
+  break-inside: avoid;
+  margin-bottom: $masonry-css-column-gap;
+}
+//
+.grid-x.content {
+	margin-top: 20px;
+}
+.masonry-css {
+	.masonry-css-item {
+		position: relative;
+	}
+	.column-title {
+		.button {
+			@include flex();
+			@include flex-align(null, middle);
+			span {
+				color: #fff;
+				text-transform: uppercase;
+				font-size: 48px;
+				@include raleway-font
+				font-weight: 700;
+			}
+		}// .button
+		&.full {
+			height: 170px;
+			a {
+				display: block;
+				height: 100%;
+				line-height: 145px;
+			}
+		}
+		&.absolute {
+			position: absolute;
+			.button {
+				span {
+					font-size: 15px;
+				}
+			}
+		}
+	}// .column-title
+}
