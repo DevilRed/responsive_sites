@@ -71,9 +71,11 @@
 // @import 'global/app-dashboard';
 @import 'global/base';
 @import 'global/typography';
+@import 'global/layout';
 
 // custom components
 @import 'components/header';
 @import 'components/footer';
 @import 'components/navigation/main-nav';
 @import 'components/homepage';
+@import 'components/category-page';

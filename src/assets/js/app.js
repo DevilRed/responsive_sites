@@ -18,10 +18,10 @@ libs.AOS.init();
 
 // SVG Injector
 // Elements to inject
-var mySVGsToInject = document.querySelectorAll('img.inject-me');
+// var mySVGsToInject = document.querySelectorAll('img.inject-me');
 
 // Options
-var injectorOptions = {
+/*var injectorOptions = {
   evalScripts: 'once',
   pngFallback: 'assets/png'
 };
@@ -34,17 +34,17 @@ var afterAllInjectionsFinishedCallback = function (totalSVGsInjected) {
 var perInjectionCallback = function (svg) {
   // Callback after each SVG is injected
   console.log('SVG injected: ' + svg);
-};
+};*/
 
 // create injector configured by options
-var injector = new libs.svgInjector(injectorOptions);
+/*var injector = new libs.svgInjector(injectorOptions);
 
 // Trigger the injection
 injector.inject(
   mySVGsToInject,
   afterAllInjectionsFinishedCallback,
   perInjectionCallback
-);
+);*/
 
 // slick carousel
 $(".content-carousel").slick({
@@ -79,7 +79,7 @@ $(".content-carousel").slick({
 });
 
 // tablesaw table plugin
-$(function () {
+/*$(function () {
   $(document)
     .foundation()
     .trigger('enhance.tablesaw');
@@ -87,10 +87,16 @@ $(function () {
 
 var TablesawConfig = {
   swipeHorizontalThreshold: 15
-};
+};*/
 
 // app dashboard toggle
-$('[data-app-dashboard-toggle-shrink]').on('click', function(e) {
+/*$('[data-app-dashboard-toggle-shrink]').on('click', function(e) {
   e.preventDefault();
   $(this).parents('.app-dashboard').toggleClass('shrink-medium').toggleClass('shrink-large');
+});*/
+$('.slider').on('moved.zf.slider', function(){
+    /*console.log($('#slide1').val());
+    console.log($('#slide2').val());*/
+    $('.slider-selector .left').text('$' + $('#slide1').val());
+    $('.slider-selector .right').text('$' + $('#slide2').val());
 });

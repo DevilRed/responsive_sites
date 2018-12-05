@@ -1,0 +1,22 @@
+<div class="grid-x">
+	<div class="title">
+		<h2>{{title}}</h2>
+	</div><!-- .title -->
+		<div class="slider-selector auto cell">
+			<h3>Shop by</h3>
+		<div class="price-toggle">
+			<h4><span class="left">Price</span><span class="right">-</span></h4>
+		</div>
+		<div class="slider auto cell" data-slider data-initial-start="50" data-step="1"  data-non-linear-base="5">
+		  <span class="slider-handle"  data-slider-handle role="slider" aria-controls="sliderOutput1" tabindex="1"></span>
+		  <span class="slider-fill" data-slider-fill></span>
+		  <span class="slider-handle" data-slider-handle role="slider" aria-controls="sliderOutput2" tabindex="1"></span>
+		  <input type="hidden" id="slide1">
+		  <input type="hidden" id="slide2">
+		</div><!-- .slider -->
+		<div class='auto cell'>
+			<p class="left slide1-val">$ <span></span></p>
+			<p class="right slide2-val">$ <span></span></p>
+		</div>
+	</div><!-- .slider-selector -->
+</div>
