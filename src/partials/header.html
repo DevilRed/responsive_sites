@@ -1,12 +1,14 @@
-<header class="grid-container-fluid full" id="header">
-	<div class="grid-container">
-		<div class="grid-x">
-			<div class="logo small-6 medium-2 cell">
-				{{> logo}}
+<div class="header-container" data-sticky-container>
+	<header class="grid-container-fluid full sticky" data-sticky data-margin-top="0" id="header">
+		<div class="grid-container">
+			<div class="grid-x">
+				<div class="logo small-6 medium-2 cell">
+					{{> logo}}
+				</div>
+				<nav class="small-6 medium-10 nav cell">
+					{{> main-nav}}
+				</nav>
 			</div>
-			<nav class="small-6 medium-10 nav cell">
-				{{> main-nav}}
-			</nav>
 		</div>
-	</div>
-</header>
+	</header>
+</div>
