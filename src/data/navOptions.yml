@@ -1,6 +1,6 @@
-- home
-- decor
-- kitchen
-- bedroom
-- about
-- contact
+- option: {text: "home", link: "homepage.html"}
+- option: {text: "decor", link: "decor.html"}
+- option: {text: "kitchen", link: "#"}
+- option: {text: "bedroom", link: "#"}
+- option: {text: "about", link: "#"}
+- option: {text: "contact", link: "#"}

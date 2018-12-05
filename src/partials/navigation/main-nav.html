@@ -4,7 +4,7 @@
 	</div>
 	<ul class="medium-horizontal menu show-for-medium">
 		{{#each navOptions}}
-			<li><a href="#">{{ this }}</a></li>
+			<li><a href="{{this.option.link}}">{{ this.option.text }}</a></li>
 		{{/each}}
 	</ul>
 	<div class="cart">
@@ -15,7 +15,7 @@
 <div class="reveal show-for-small-only" id="nav-modal" data-reveal>
     <ul class="menu vertical">
       {{#each navOptions}}
-				<li><a href="#">{{ this }}</a></li>
+				<li><a href="{{this.option.link}}">{{ this.option.text }}</a></li>
 			{{/each}}
     </ul>
     <button class="close-button" data-close aria-label="Close modal" type="button">
