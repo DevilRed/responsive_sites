@@ -1,0 +1,33 @@
+---
+layout: cozyLayout
+meta-title: decor
+---
+
+<div class="grid-container category-container">
+	<div class="grid-x">
+		<div class="filter-container medium-3 cell">
+			{{> slider-selector title="decor"}}
+		</div>
+		<div class="catalog small-12 medium-9 cell">
+			<div class="sort-selector grid-x align-right">
+				<select name="sort-by" id="sort-by" class="float-right">
+					<option value="" disabled selected>Sort by</option>
+					<option value="option1">option1</option>
+					<option value="option2">option2</option>
+					<option value="option3">option3</option>
+				</select>
+			</div>
+			<div class="grid-x grid-margin-x">
+				<div class="small-12 medium-6 cell">{{> product-box image="assets/img/kitchen/kitchen1.png" title="wood spoons" price="39.00"}}</div>
+				<div class="small-12 medium-6 cell">{{> product-box image="assets/img/kitchen/kitchen2.png" title="plant pots" price="45.00"}}</div>
+				<div class="small-12 medium-6 cell">{{> product-box image="assets/img/kitchen/kitchen3.png" title="enamel cookware" price="49.00"}}</div>
+				<div class="small-12 medium-6 cell">{{> product-box image="assets/img/kitchen/kitchen4.png" title="japanese tea kattle" price="65.00" label=true label-text="new"}}</div>
+				<div class="small-12 medium-6 cell">{{> product-box image="assets/img/kitchen/kitchen5.png" title="wood chair" price="85.00"}}</div>
+				<div class="small-12 medium-6 cell">{{> product-box image="assets/img/kitchen/kitchen6.png" title="low pile rug" price="89.00"}}</div>
+				<div class="small-12 medium-6 cell">{{> product-box image="assets/img/kitchen/kitchen7.png" title="wooden chair" price="158.00"}}</div>
+				<div class="small-12 medium-6 cell">{{> product-box image="assets/img/kitchen/kitchen8.png" title="wood floor lamp" price="128.00"}}</div>
+				<div class="small-12 medium-6 cell">{{> product-box image="assets/img/kitchen/kitchen9.png" title="knitted throw" price="39.00"}}</div>
+			</div>
+		</div>
+	</div>
+</div>

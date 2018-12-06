@@ -3,8 +3,8 @@
 		<div class="image-wrapper">
 			<img src="{{image}}" alt="image">
 			<button class="button quick">quick view</button>
-			{{#if sale}}
-			<button class="button primary sale">ON SALE</button>
+			{{#if label}}
+			<button class="button primary label">{{label-text}}</button>
 			{{/if}}
 		</div>
 		<span class="product-info">

@@ -31,7 +31,7 @@
 			transition: display 0.5s ease-in-out;
 			height: 50px;
 		}// .quick
-		.sale {
+		.label {
 			position: absolute;
 			top: 0;
 			left: 0;
@@ -39,6 +39,7 @@
 			@include raleway-font;
 			font-size: 16px;
 			padding: 8px 10px;
+			text-transform: uppercase;
 			background-color: #6D8C7D;
 		}
 	}// .image-wrapper
