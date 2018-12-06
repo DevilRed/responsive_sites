@@ -1,0 +1,15 @@
+<div class="product-box">
+	<a href="#">
+		<div class="image-wrapper">
+			<img src="{{image}}" alt="image">
+			<button class="button quick">quick view</button>
+			{{#if sale}}
+			<button class="button primary sale">ON SALE</button>
+			{{/if}}
+		</div>
+		<span class="product-info">
+			<h3>{{title}}</h3>
+			<p class="price">${{price}}</p>
+		</span>
+	</a>
+</div>
