@@ -1,0 +1,32 @@
+.about {
+	.title {
+		h2 {
+			@include raleway-font;
+			font-weight: 700;
+			margin: 30px 0;
+			font-size: 30px;
+			@include breakpoint(medium) {
+				font-size: 40px;
+				margin: 55px 0;
+			}
+		}
+	}
+	p {
+		@include raleway-font;
+		font-size: 15px;
+		line-height: 1.5em;
+		color: #000;
+		margin-bottom: 25px;
+		line-height: 1.5em;
+		&.question {
+			font-size: 18px;
+			line-height: 21px;
+			letter-spacing: 0.1em;
+		}
+	}
+	.text {
+		@include breakpoint(medium) {
+			padding-right: 40px;
+		}
+	}
+}// .about
