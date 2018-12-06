@@ -39,7 +39,33 @@
 					color: #2F2F2F;
 				}
 			}
-		}
+			.toggle {
+				clear: both;
+				height: auto;
+				overflow: hidden;
+				margin-top: 25px;
+				margin-bottom: 5px;
+				cursor: pointer;
+				h4 {
+					font-size: 15px;
+					span {
+						@include raleway-font;
+						color: #000;
+						&.right {
+							font-size: 30px;
+							position: relative;
+							bottom: 10px;
+						}
+					}
+				}
+			}
+			.slider.cell {
+				margin-top: 10px;
+				.values {
+					padding-top: 15px;
+				}
+			}
+		}// .slider-selector
 		.slider-handle {
 			border-radius: 10px;
 			width: 10px;
@@ -53,8 +79,8 @@
 		.slider-fill {
 			background-color: $black;
 		}
-	.slider.cell {
-		margin: 25px 0 10px 0;
-	}
+		.slider.cell {
+			margin: 25px 0 10px 0;
+		}
 	}// .filter-container
-}
+}// .category-container
