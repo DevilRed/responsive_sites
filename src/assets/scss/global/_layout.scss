@@ -4,3 +4,23 @@
 .rigth {
 	float: right;
 }
+.breadcrumbs {
+	li {
+		color: #2f2f2f;
+		@include raleway-font;
+		font-size: 15px;
+		line-height: 21px;
+		&.disabled {
+			//
+		}
+		&::after {
+			color: #2f2f2f !important;
+		}
+		a {
+			font-family: inherit;
+			font-size: inherit;
+			color: inherit;
+			text-transform: none;
+		}
+	}
+}
