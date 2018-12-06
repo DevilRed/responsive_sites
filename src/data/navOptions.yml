@@ -3,4 +3,4 @@
 - option: {text: "kitchen", link: "kitchen.html"}
 - option: {text: "bedroom", link: "bedroom.html"}
 - option: {text: "about", link: "about.html"}
-- option: {text: "contact", link: "#"}
+- option: {text: "contact", link: "contact.html"}

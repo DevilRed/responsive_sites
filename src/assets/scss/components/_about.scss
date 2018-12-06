@@ -1,4 +1,12 @@
-.about {
+.about, .contact {
+	@include breakpoint(small only) {
+		.form-container {
+			@include flex-order(0);
+		}
+		.text {
+			@include flex-order(1);
+		}
+	}
 	.title {
 		h2 {
 			@include raleway-font;
@@ -29,4 +37,38 @@
 			padding-right: 40px;
 		}
 	}
+	.contact-info {
+		.num {
+			margin-bottom: 0;
+		}
+	}
 }// .about
+
+.contact-form {
+	input, textarea {
+		margin: 0;
+		margin-bottom: 6px;
+		@include raleway-font;
+		font-size: 15px;
+
+		&[type="submit"] {
+			background-color: rgb(64, 83, 87);
+			color: #fff;
+			font-size: 15px;
+			float: right;
+			padding: 10px 45px;
+			@include breakpoint(medium) {
+				margin-bottom: 75px;
+			}
+		}
+
+		&:hover, &:focus {
+			background-color: rgba(186, 210, 214, 0.4);
+			border: 1px solid rgba(47, 47, 47, 0.55);
+		}
+	}// input, textarea
+	textarea {
+		max-height: 126px;
+		resize: none;
+	}
+}
