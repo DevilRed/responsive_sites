@@ -4,6 +4,9 @@
 	@include breakpoint(medium) {
 		padding-top: 55px;
 	}
+	@include breakpoint(small only) {
+		padding: 15px 30px;
+	}
 	.selectors-wrapper {
 		@include xy-cell(12);
 		margin: 0;
@@ -128,9 +131,13 @@
 		.sort-selector {
 			select {
 				max-width: 200px;
+				display: none;
 			}
 			@include breakpoint(medium) {
 				margin-top: 79px;
+				select {
+					display: block;
+				}
 			}
 		}
 	}

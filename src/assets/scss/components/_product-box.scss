@@ -1,10 +1,12 @@
 .product-box {
 	a {
 		position: relative;
-		&:hover {
-			.image-wrapper {
-				.button {
-					display: block;
+		@include breakpoint(medium) {
+			&:hover {
+				.image-wrapper {
+					.button {
+						display: block;
+					}
 				}
 			}
 		}
