@@ -8,6 +8,19 @@ meta-title: decor
 		<div class="filter-container medium-3 cell">
 			{{> slider-selector title="decor"}}
 		</div>
-		<div class="catalog small-12 medium-9 cell">products here</div>
+		<div class="catalog small-12 medium-9 cell">
+			<div class="sort-selector grid-x align-right">
+				<select name="sort-by" id="sort-by" class="float-right">
+					<option value="" disabled selected>Sort by</option>
+					<option value="option1">option1</option>
+					<option value="option2">option2</option>
+					<option value="option3">option3</option>
+				</select>
+			</div>
+			<div class="grid-x">
+				<small-12 class="medium-6 cell">product</small-12>
+				<small-12 class="medium-6 cell">product</small-12>
+			</div>
+		</div>
 	</div>
 </div>

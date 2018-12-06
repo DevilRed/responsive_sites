@@ -123,4 +123,14 @@
 			}
 		}// .toggle
 	}// .filter-container
+	.catalog {
+		.sort-selector {
+			select {
+				max-width: 200px;
+			}
+			@include breakpoint(medium) {
+				margin-top: 93px;
+			}
+		}
+	}
 }// .category-container
