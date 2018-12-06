@@ -12,9 +12,12 @@
     <link rel="stylesheet" href="{{root}}assets/css/app.css">
   </head>
   <body class="{{page}} {{layout}}">
-    {{> header}}
-    {{> body}}
-    {{> footer}}
+    {{> off-canvas}}
+    <div class="off-canvas-content" data-off-canvas-content>
+      {{> header}}
+      {{> body}}
+      {{> footer}}
+    </div>
     <script src="{{root}}assets/js/app.js"></script>
   </body>
 </html>

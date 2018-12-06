@@ -1,0 +1,38 @@
+.off-canvas.cart {
+	min-width: 348px;
+	.title {
+		@include flex();
+		@include flex-align(center, middle);
+		background-color: #000;
+		margin: 0;
+		height: 98px;
+		h3 {
+			@include raleway-font;
+			font-size: 23px;
+			line-height: 28px;
+			color: #fff;
+			width: 100%;
+			position: relative;
+			&::before {
+				content: ">";
+				position: absolute;
+				left: 10%;
+				font-size: 27px;
+			}
+		}
+	}// .title
+	.cart-content {
+		padding-top: 40px;
+		p {
+			@include raleway-font;
+			font-size: 18px;
+			color: rgb(47, 47, 47);
+		}
+	}
+	.close-button {
+		color: #fff;
+		&:hover {
+			color: #fff;
+		}
+	}
+}// .off-canvas.cart
