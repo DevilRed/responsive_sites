@@ -2,11 +2,12 @@
 	<div class="title">
 		<h2>{{title}}</h2>
 	</div><!-- .title -->
-		<div class="slider-selector auto cell">
-			<div class="slider-title">
-				<h3>Shop by</h3>
-			</div>
-		<div class="toggle">
+	<div class="selectors-wrapper show-for-medium">
+	<div class="slider-selector auto cell">
+		<div class="slider-title">
+			<h3>Shop by</h3>
+		</div>
+		<div class="toggle" data-toggle="slider">
 			<h4><span class="left">Price</span><span class="right">-</span></h4>
 		</div>
 		<div id="slider" class="slider auto cell" data-slider data-initial-start="50" data-step="1"  data-non-linear-base="5">
@@ -20,9 +21,16 @@
 				<p class="right slide-val">$ <span></span></p>
 			</div>
 		</div><!-- .slider -->
-		<!-- <div class='auto cell'>
-			<p class="left slide-val">$ <span></span></p>
-			<p class="right slide-val">$ <span></span></p>
-		</div> -->
 	</div><!-- .slider-selector -->
-</div>
+	<div class="color-selector">
+		<div class="toggle" data-toggle="color-grid">
+			<h4><span class="left">Color</span><span class="right">-</span></h4>
+		</div>
+		<div class="color-grid" id="color-grid">
+			<button class="button primary color white"></button>
+			<button class="button primary color gray"></button>
+			<button class="button primary color red"></button>
+		</div>
+	</div>
+	</div><!-- /.selectors-wrapper -->
+</div><!-- .grid-x -->
