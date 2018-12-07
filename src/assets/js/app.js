@@ -103,7 +103,7 @@ function setSliderValues(){
 setSliderValues();
 
 function sliderSelectorToggle(){
-  $('.filter-container .toggle').on('click', function (){
+  $('.toggle').on('click', function (){
     $('#'+$(this).attr('data-toggle')).toggle('fast', function (){
       let slideToggleState = $(this).is(':visible');
       if(!slideToggleState) {

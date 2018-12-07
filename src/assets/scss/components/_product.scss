@@ -1,21 +1,29 @@
 .product-view {
-	/* .left {
-		float: left;
+	@include breakpoint(small only) {
+		padding: 0 20px;
 	}
-	.right {
-		float: right;
-	} */
 	p {
 		@include raleway-font;
 	}
 	.main {
 		@include flex();
 		@include flex-align(null, stretch);
-		min-height: 498px;
-		min-width: 498px;
+		min-width: 100%;
+		min-height: 258px;
+		margin-bottom: 20px;
+		img {
+			max-width: 100%;
+		}
+		@include breakpoint(medium) {
+			min-height: 498px;
+			min-width: 498px;
+		}
 	}
 	.gallery {
 		margin: 20px 0 30px 0;
+		@include breakpoint(small only) {
+			display: none;
+		}
 		li {
 			display: inline-block;
 			max-width: 45px;
@@ -50,6 +58,8 @@
 	}
 	.product-options {
 		margin-top: 20px;
+		padding-bottom: 20px;
+		border-bottom: 1px solid  rgb(156, 156, 156);
 		label {
 			@include raleway-font;
 			color: rgb(47, 47, 47);
@@ -90,9 +100,55 @@
 			font-size: 15px;
 		}
 	}// .product-options
+	.product-info, .policies {
+		border-bottom: 1px solid rgb(156, 156, 156);
+		padding-bottom: 30px;
+	}
+	.header {
+		text-transform: uppercase !important;
+		@include flex();
+		@include flex-align(justify);
+		margin-bottom: 25px;
+		margin-top: 35px;
+		cursor: pointer;
+		span {
+			@include raleway-font;
+			font-size: 17px;
+			font-weight: 400;
+			color: #000;
+			&.right {
+				font-size: 30px;
+				position: relative;
+				bottom: 5px;
+				font-weight: 300;
+			}
+		}
+	}// .header
+	.text {
+		@include raleway-font;
+		font-size: 13px;
+		line-height: 1.2em;
+		color: rgb(47, 47, 47);
+	}
 }// .product-view
 .product-navigation {
-	margin: 50px 0;
+	margin: 30px 0 10px 0;
+	@include breakpoint(medium) {
+		margin: 50px 0;
+	}
+	.breadcrumbs {
+		a {
+			padding: 0 0 0 25px;
+			position: relative;
+			@include breakpoint(small only) {
+				&::after {
+					content: "<";
+					position: absolute;
+					left: 0;
+				}
+			}
+		}// a
+	}// .breadcrumbs
 	.pagination {
 		li {
 			a {
