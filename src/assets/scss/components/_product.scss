@@ -127,8 +127,14 @@
 	.text {
 		@include raleway-font;
 		font-size: 13px;
-		line-height: 1.2em;
+		line-height: 1.5em;
 		color: rgb(47, 47, 47);
+	}
+	.social {
+		margin-bottom: 45px;
+		@include breakpoint(medium) {
+			margin-bottom: 70px;
+		}
 	}
 }// .product-view
 .product-navigation {

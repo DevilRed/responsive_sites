@@ -23,4 +23,36 @@
 			text-transform: none;
 		}
 	}
-}
+}// .breadcrumbs
+.social {
+	ul {
+		margin-top: 20px;
+		@include breakpoint(small only) {
+			text-align: center;
+		}
+		li {
+			display: inline-block;
+			margin: 0 10px;
+			a {
+				font-size: 18px;
+				i {
+					&.fa-facebook-f {
+						color: rgb(58, 88, 151);;
+					}
+					&.fa-twitter {
+						color: rgb(119, 218, 247);;
+					}
+					&.fa-google-plus-g {
+						color: rgb(249, 92, 56);;
+					}
+					&.fa-pinterest-p {
+						color: rgb(245, 97, 135);
+					}
+					&.fa-share-square {
+						color: rgb(64, 164, 230);;
+					}
+				}// i
+			}// a
+		}// li
+	}// ul
+}// .social
