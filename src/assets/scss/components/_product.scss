@@ -10,13 +10,19 @@
 		@include flex-align(null, stretch);
 		min-width: 100%;
 		min-height: 258px;
+		max-height: 258px;
+		cursor: crosshair;
 		margin-bottom: 20px;
+		background-size: cover;
 		img {
 			max-width: 100%;
+			visibility: hidden;
 		}
 		@include breakpoint(medium) {
-			min-height: 498px;
-			min-width: 498px;
+			min-height: 455px;
+			max-height: 455px;
+			min-width: auto;
+			max-width: 100%;
 		}
 	}
 	.gallery {

@@ -19,8 +19,8 @@ meta-title: Bedroom
 			{{> product-main-info}}
 		</div>
 		<div class="small-12 medium-6 cell media">
-			<div class="main">
-				<img src="assets/img/bedroom/bedroom1.png">
+			<div class="main detail-view" style="background-image: url('assets/img/bedroom/bedroom1-big.png');">
+				<img src="assets/img/bedroom/bedroom1.png" id="product-main-img">
 			</div>
 			<div class="gallery">
 				<ul>
@@ -32,7 +32,8 @@ meta-title: Bedroom
 				<p>I'm a product description. I’m a great place to include more information about your product. Buyers like to know what they’re getting before they purchase.</p>
 			</div>
 		</div>
-		<div class="small-12 medium-6 cell details">
+		<div class="small-12 medium-6 cell details" id="product-details">
+			<div id="focus-img-container"></div>
 			<div class="show-for-medium">{{> product-main-info}}</div>
 			<div class="product-options">
 				<form>

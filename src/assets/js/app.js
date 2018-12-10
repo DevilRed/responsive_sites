@@ -10,6 +10,7 @@ import Foundation from 'foundation-sites';
 
 import 'tablesaw/dist/tablesaw.jquery';
 import libs from './lib/dependencies';
+import imageZoom from './lib/image-zoom';
 window.libs = libs;
 
 $(document).foundation();
@@ -115,3 +116,5 @@ function sliderSelectorToggle(){
   });
 };
 sliderSelectorToggle();
+
+imageZoom();
