@@ -102,6 +102,12 @@
 					&:hover {
 						border: 1px solid #c9c9c9;
 					}
+					&.green {
+						background-color: #009900;
+					}
+					&.red {
+						background-color: #990000;
+					}
 				}
 			}
 		}// // color-selector
