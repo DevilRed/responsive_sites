@@ -5,6 +5,10 @@ $masonry-css-column-gap: $global-margin;
 .masonry-css {
   column-count: 1;
   column-gap: $masonry-css-column-gap;
+  cursor: pointer;
+  img {
+  	transition: transform .75s ease;
+  }
 
   @include breakpoint(medium) {
     column-count: 3;
@@ -23,6 +27,14 @@ $masonry-css-column-gap: $global-margin;
 .masonry-css {
 	.masonry-css-item {
 		position: relative;
+		overflow: hidden;
+		@include breakpoint(medium) {
+			&:hover {
+				img  {
+					transform: scale(1.3) translateZ(0);
+				}
+			}
+		}
 	}
 	.column-title {
 		.button {
