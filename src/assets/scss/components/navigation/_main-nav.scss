@@ -1,60 +1,63 @@
 #nav {
-	margin-top: 35px;
-	margin-right: 22px;
-	position: relative;
-	@include breakpoint(small only) {
-		position: absolute;
-		top: 20px;
-		right: 5px;
-		margin-right: 0;
-		margin-top: 0;
-	}
-	ul {
-		li {
-			a {
-				text-transform: capitalize;
-				@include futura-font;
-				padding: 0 10px;
-				color: #fff;
-				line-height: 50px;
-				font-size: 15px;
-			}
-		}
-	}
-}// #nav
+  margin-top: 35px;
+  margin-right: 22px;
+  position: relative;
+  @include breakpoint(small only) {
+    position: absolute;
+    top: 20px;
+    right: 5px;
+    margin-right: 0;
+    margin-top: 0;
+  }
+  ul {
+    li {
+      a {
+        text-transform: capitalize;
+        @include futura-font;
+        padding: 0 10px;
+        color: #fff;
+        line-height: 50px;
+        font-size: 15px;
+      }
+    }
+  }
+} // #nav
 .menu {
-	&.vertical {
-		padding-top: 90px;
-	}
-	li {
-		text-align: center;
-		a {
-			text-transform: capitalize;
-			@include futura-font;
-			padding: 0 10px;
-			color: #fff;
-			line-height: 50px;
-			font-size: 15px;
-		}
-	}
-}// .menu
+  &.vertical {
+    padding-top: 90px;
+  }
+  li {
+    text-align: center;
+    a {
+      text-transform: capitalize;
+      @include futura-font;
+      padding: 0 10px;
+      color: #fff;
+      line-height: 50px;
+      font-size: 15px;
+    }
+  }
+} // .menu
 
 .mobile-nav {
-	border: 1px solid  #fff;
-	border-radius: 4px;
-	background-color: transparent;
-	padding: 10px 12px;
-	button {
-		height: 28px;
-		margin: 0 !important;
-		padding: 0;
-		&::after {
-			top: 6px;
-		}
-	}
+  border: 1px solid #fff;
+  border-radius: 4px;
+  background-color: transparent;
+  padding: 10px 12px;
+  button {
+    height: 28px;
+    margin: 0 !important;
+    padding: 0;
+    &::after {
+      top: 6px;
+    }
+  }
 }
 .menu-icon::after {
-    background: #fff;
-    box-shadow: 0 7px 0 #fff, 0 14px 0 #fff;
-    -webkit-box-shadow: 0 7px 0 #fff, 0 14px 0 #fff;
+  background: #fff;
+  box-shadow: 0 7px 0 #fff, 0 14px 0 #fff;
+  -webkit-box-shadow: 0 7px 0 #fff, 0 14px 0 #fff;
+}
+.close-button {
+  z-index: 1;
 }
